@@ -12,7 +12,7 @@
 <body>
 	<?php $linkAtivo = basename($_SERVER['SCRIPT_NAME']); ?>
 	<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-		<a class="navbar-brand" href="#"><i class="fas fa-bone" style="color: #fff; font-size: 100%; transform: rotate(90deg);"></i></a>
+		<a class="navbar-brand" href="#" style="cursor: default;"><i class="fas fa-bone" style="color: rgba(255,255,255,.65); font-size: 100%;"></i></a>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li <?php if($linkAtivo == "index.php"){echo 'class="active"';} ?> class="nav-item">

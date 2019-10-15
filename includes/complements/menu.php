@@ -1,6 +1,6 @@
 <?php $linkAtivo = basename($_SERVER['SCRIPT_NAME']); ?>
 <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-	<a class="navbar-brand" href="#"><i class="fas fa-bone" style="color: #fff; font-size: 100%; transform: rotate(90deg);"></i></a>
+	<a <?php if($linkAtivo == "produtos_servicos.php"){echo 'style="cursor: pointer"';}else{echo 'style="cursor: default;"';} ?> class="navbar-brand" href="#"><i <?php if($linkAtivo == "produtos_servicos.php"){echo 'style="font-size: 100%; color: #fff; transform: rotate(90deg);"';}else{echo 'style="color: rgba(255,255,255,.65); font-size: 100%;"';} ?> class="fas fa-bone"></i></a>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li <?php if($linkAtivo == "index.php"){echo 'class="active"';} ?> class="nav-item">

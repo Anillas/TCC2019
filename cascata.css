@@ -4,12 +4,6 @@ body{
 	padding: 0px;
 	background: #fc0;
 }
-.pmnmi{
-	border-radius: 8px 0px 0px 0px
-}
-.umnmi{
-	border-radius: 0px 0px 8px 8px;
-}
 .novo{
 	display: none
 }
