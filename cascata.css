@@ -1,0 +1,54 @@
+body{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #fc0;
+}
+.pmnmi{
+	border-radius: 8px 0px 0px 0px
+}
+.umnmi{
+	border-radius: 0px 0px 8px 8px;
+}
+.novo{
+	display: none
+}
+.icone:hover .novo{
+	display: inline-block
+}
+.icone:hover .antigo{
+	display: none
+}
+.fas{
+	color:rgba(255,255,255,.65)
+}
+.icone:hover .fas{
+	color:rgba(255,255,255,.85)
+}
+.footer{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	border-radius: 0px;
+	border: none;
+	background-color: transparent
+}
+.footer_titulo{
+	border-radius: 0px!important;
+	background-color: #343a40;
+	color: white
+}
+.footer_corpo{
+	background-color: #000;
+	color: white
+}
+#subir{
+	float: right;
+	position:relative;
+	right:0px
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
