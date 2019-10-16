@@ -41,7 +41,7 @@
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustomTelefone">Telefone</label>
-      <input type="number" class="form-control" id="validationCustomTelefone" placeholder="(00) 00000-0000" required>
+      <input type="number" class="form-control" id="validationCustomTelefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\)\d{4}-\d{4}" required>
       <div class="valid-feedback">
         Bom!
       </div>
