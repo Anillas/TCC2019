@@ -165,7 +165,7 @@
 </div>
 	<?php include "../complements/footer.php"; ?>
 	<?php include "../complements/script.php"; ?>
-  <script type="text/javascript" src="../jQuery/jquery.min.js"></script>
+  <script type="text/javascript" src="../jQuery/jquery.mask.min.js"></script>
   <script type="text/javascript" src="../jQuery/jquery.inputmask.bundle.js"></script>
   <script type="text/javascript">
     $(":input").inputmask();
