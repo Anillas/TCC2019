@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complements/meta.php"; ?>
-	<?php include "../complements/link.php"; ?>
-	<link rel="stylesheet" type="text/css" href="../complements/style_menuLateral.css">
+	<?php include "../complementos/meta.php"; ?>
+	<?php include "../complementos/link.php"; ?>
+	<link rel="stylesheet" type="text/css" href="../complementos/style_menuLateral.css">
 	<title>Produtos e Serviços</title>
 </head>
 <body>
-	<?php include "../complements/menu.php"; ?>
+	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
         <nav id="sidebar" class="fixed-left">
             <ul class="list-unstyled components" style="border: none;">
@@ -52,21 +52,21 @@
             <div class="card-header titulo_card"><h3>Casinhas para cachorros...</h3></div>
             <div class="card-columns" id="coluna01">
                 <div class="card border-dark">
-                    <img src="../images/produtos/casas_pet/cachorro/casa_cachorro_01.jpg" class="card-img-top" alt="...">
+                    <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Casinha de madeira com uma pequena área.</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
                    <div class="card border-dark">
-                    <img src="../images/produtos/casas_pet/cachorro/casa_cachorro_02.jpg" class="card-img-top" alt="...">
+                    <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_02.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title that wraps to a new line</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
                   <div class="card border-dark">
-                    <img src="../images/produtos/casas_pet/cachorro/casa_cachorro_03.jpg" class="card-img-top" alt="...">
+                    <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_03.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title that wraps to a new line</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -76,8 +76,8 @@
             <div class="dropdown-divider"></div>
         </div>
     </div>
-	<?php include "../complements/footer.php"; ?>
-	<?php include "../complements/script.php"; ?>
+	<?php include "../complementos/footer.php"; ?>
+	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../../font-awesome/js/solid.js"></script>
 	<script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
 	<script type="text/javascript">
