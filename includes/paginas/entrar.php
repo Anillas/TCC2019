@@ -17,7 +17,7 @@
         	</button>
       	</div>
       <div class="modal-body">
-        <form class="needs-validation" method="POST" action="../banco/cadastro_usuario.php" novalidate>
+        <form class="needs-validation" method="POST" action="cadastrar.php" novalidate>
   				<div class="form-row">
     				<div class="col-md-4 mb-3">
 				      <label for="nomeUsuario">Nome</label>
@@ -68,7 +68,7 @@
     				</div>
     <div class="col-md-4 mb-3">
       <label for="novaSenha">Senha</label>
-      <input type="text" class="form-control" name="novaSenha" id="novaSenha" placeholder="Senha" required>
+      <input type="password" class="form-control" name="novaSenha" id="novaSenha" placeholder="Senha" required>
       <div class="valid-feedback">
         Bom!
       </div>
