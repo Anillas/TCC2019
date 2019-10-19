@@ -139,7 +139,7 @@
     </h5>
   </div>
   <div class="card-body">
-	<form class="mx-auto needs-validation" method="POST" action="../banco/processo_entrar.php" novalidate>
+	<form class="mx-auto needs-validation" method="POST" action="logar.php" novalidate>
   	<div class="mb-3">
       <div class="input-group">
         <div class="input-group-prepend">
@@ -157,7 +157,9 @@
         Preencha este campo!
       </div>
   </div>
+  <a href="../../index.php">
   <button type="button" class="btn btn-danger col-md-5 mb-2">Sair</button>
+</a>
   <button type="submit" class="btn btn-success col-md-5 justify-content-end" style="float: right;">Entrar</button>
 </form>
 </div>

@@ -1,17 +1,13 @@
 <?php
-	$db_host = "localhost";
-	$db_nome = "banco";
-	$db_usuario = "root";
-	$db_senha = "";
-	$connect = mysqli_connect($db_host,$db_usuario,$db_senha,$db_nome);
-	$nomeUsuario = $_POST['nomeUsuario'];
-	$sobrenomeUsuario = $_POST['sobrenomeUsuario'];
-	$telefoneUsuario = $_POST['telefoneUsuario'];
-	$novoUsuario = $_POST['novoUsuario'];
-	$novaSenha = $_POST['novaSenha'];
-	$cidadeUsuario = $_POST['cidadeUsuario'];
-	$estadoUsuario = $_POST['estadoUsuario'];
-	$cepUsuario = $_POST['cepUsuario'];
+	require 'conexao.php';
+	$nomeUsuario = isset($_POST["nomeUsuario"]) ? trim($_POST["nomeUsuario"]) : FALSE;
+	$sobrenomeUsuario = isset($_POST["sobrenomeUsuario"]) ? trim($_POST["sobrenomeUsuario"]) : FALSE;
+	$telefoneUsuario = isset($_POST["telefoneUsuario"]) ? ($_POST["telefoneUsuario"]) : FALSE;
+	$novoUsuario = isset($_POST["novoUsuario"]) ? trim($_POST["novoUsuario"]) : FALSE;
+	$novaSenha = isset($_POST["novaSenha"]) ? md5($_POST["novaSenha"]) : FALSE;
+	$cidadeUsuario = isset($_POST["cidadeUsuario"]) ? trim($_POST["cidadeUsuario"]) : FALSE;
+	$estadoUsuario = isset($_POST["estadoUsuario"]) ? trim($_POST["estadoUsuario"]) : FALSE;
+	$cepUsuario = isset($_POST["cepUsuario"]) ? ($_POST["cepUsuario"]) : FALSE;
 	/*if (!$connect){
     	die("Connection failed: " . mysqli_connect_error());
 	}*/
