@@ -12,7 +12,7 @@
     	die("Connection failed: " . mysqli_connect_error());
 	}*/
 	//echo "Connected successfully";
-	$sql_insert_cadastro = "INSERT INTO `cadastro`(`nomeUsuario`, `sobrenomeUsuario`, `telefoneUsuario`, `novoUsuario`, `novaSenha`, `cidadeUsuario`, `estadoUsuario`, `cepUsuario`) VALUES ('$nomeUsuario','$sobrenomeUsuario','$telefoneUsuario','$nomeUsuario','$novaSenha','$cidadeUsuario','$estadoUsuario','$cepUsuario')";
+	$sql_insert_cadastro = "INSERT INTO `cadastro`(`nomeUsuario`, `sobrenomeUsuario`, `telefoneUsuario`, `novoUsuario`, `novaSenha`, `cidadeUsuario`, `estadoUsuario`, `cepUsuario`) VALUES ('$nomeUsuario','$sobrenomeUsuario','$telefoneUsuario','$novoUsuario','$novaSenha','$cidadeUsuario','$estadoUsuario','$cepUsuario')";
 	/*if () {
       echo "New record created successfully";
 	} else {

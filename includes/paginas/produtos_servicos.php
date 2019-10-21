@@ -54,22 +54,22 @@
                 <div class="card border-dark">
                     <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_01.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Casinha de madeira com uma pequena área.</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                   </div>
                    <div class="card border-dark">
                     <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_02.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title that wraps to a new line</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                   </div>
                   <div class="card border-dark">
                     <img src="../imagens/produtos/casas_pet/cachorro/casa_cachorro_03.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title that wraps to a new line</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Lorem Ipsum</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                   </div>
             </div>
