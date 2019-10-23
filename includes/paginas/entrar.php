@@ -1,3 +1,4 @@
+<?php ob_start() ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,7 +140,7 @@
     </h5>
   </div>
   <div class="card-body">
-	<form class="mx-auto needs-validation" method="POST" action="logar.php" novalidate>
+	<form class="mx-auto needs-validation" method="POST" action="entrar.php" novalidate>
   	<div class="mb-3">
       <div class="input-group">
         <div class="input-group-prepend">
@@ -162,6 +163,7 @@
 </a>
   <button type="submit" class="btn btn-success col-md-5 justify-content-end" style="float: right;">Entrar</button>
 </form>
+<?php include '../banco/login.php'; ?>
 </div>
 </div>
 </div>

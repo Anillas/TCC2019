@@ -10,16 +10,7 @@
 	<?php include "../banco/cadastro_usuario.php" ?>
 	<div class="mx-auto col-md-4">
 		<div class="card" style="background-color: #343a40;">
-  <div class="card-header">
-    <h5 class="text-success">
-    	Login realizado com sucesso!
-    </h5>
-  </div>
-  <div class="card-body">
-  	<p class="text-warning">
-	Redirecionando para a página inicial... 
-</p>
-</div>
+  <?php include '../banco/login.php'; ?>
 </div>
 </div>
 	<?php include "../complementos/footer.php"; ?>
