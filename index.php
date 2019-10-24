@@ -17,9 +17,17 @@
 			<li class="nav-item active">
 				<a class="nav-link mb-0 h5 icone" href="index.php"><i class="fas fa-home" style="font-size: 100%; padding-right: 10px; color: #fff;"></i>Home</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link mb-0 h5 icone" href="includes/paginas/entrar.php"><i class="fas fa-door-closed antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-door-open novo" style="font-size: 110%; padding-right: 7.5px;"></i>Entrar</a>
-			</li>
+			<?php require 'includes/complementos/init.php'; ?>
+			<?php if ($_SESSION['usuario'] == 'deslogado') { ?>
+				<li class="nav-item">
+					<a class="nav-link mb-0 h5 icone" href="includes/paginas/entrar.php"><i class="fas fa-door-closed antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-door-open novo" style="font-size: 110%; margin-right: 7.5px;"></i>Entrar</a>
+				</li>
+			<?php } ?>
+			<?php if ($_SESSION['usuario'] == 'logado') { ?>
+				<li class="nav-item">
+					<a class="nav-link mb-0 h5 icone" href="includes/paginas/configurar.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
+				</li>
+			<?php } ?>
 			<li class="nav-item">
 				<a class="nav-link mb-0 h5 icone" href="includes/paginas/produtos_servicos.php"><i class="fas fa-shopping-cart antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-cart-plus novo" style="font-size: 100%; padding-right: 10px;"></i>Produtos e Serviços</a>
 			</li>

@@ -79,7 +79,9 @@
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../../font-awesome/js/solid.js"></script>
-	<script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
+    <!-- TALVEZ SEJA ESSENCIAL PRO MENU LATERAL
+	   <script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
+    -->
 	<script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
