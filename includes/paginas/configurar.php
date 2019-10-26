@@ -7,7 +7,7 @@
 </head>
 <body>
 	<?php include "../complementos/menu.php"; ?>
-	<button class="btn btn-outline-warning my-2 my-sm-0" type="button">Buscar</button>
+	<img src="../imagens/em_construcao.png" style="width: 100%;">
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 </body>

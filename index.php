@@ -43,17 +43,36 @@
 	</div>
 </nav>
 <div class="mb-5"></div>
-<h1>OI</h1>
-<h1>OI</h1>
-<br>
-<h1>OI</h1>
-<br>
-<h1>OI</h1>
-<h1>OI</h1>
-<br>
-<h1>OI</h1>
-<br>
-<h1>OI</h1>
+
+
+
+<div class="parallax">
+	<div class="row justify-content-center">
+		<div class="col-6 pt-5">
+			<div class="card border-warning p-4" style="opacity: 0.85;">
+				<h3>A Canis</h3>
+				<h5>
+				Nossa empresa surgiu com o objetivo de levar aos donos de animais de estimação a possibilidade de dar algo para seus bichinhos que sempre gostariam que eles tivessem. Não importa de que esfera cultural nossos clientes fazem parte, temos produtos para todos os gostos! E caso alguém ainda sinta falta de uma representação, tem a total liberdade de colocar a mão na massa e personalizar o seu próprio produto, para o seu melhor amigo.
+				</h5>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="parallax1">
+	<div class="row justify-content-center mb-5">
+		<div class="col-6 pt-5">
+			<div class="card border-warning p-4" style="opacity: 0.85;">
+				<h3>Nossa visão</h3>
+				<h5>
+				Amamos a todos os animais, sem exceção! E também sabemos que muitas pessoas possuem companheiros animais um tanto quanto diferente dos demais. Vendo que todos os pets merecem carinho, a Canis busca ajudar todos os donos a oferecer o melhor para seu amigo.
+				</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 	<?php include "includes/complementos/footer.php"; ?>
 	<script src="bootstrap/js/bootstrap.slim.js"></script>
 	<script src="bootstrap/js/bootstrap.popper.js"></script>
