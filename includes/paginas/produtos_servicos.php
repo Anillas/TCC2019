@@ -10,19 +10,19 @@
 	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
         <nav id="sidebar" class="fixed-left">
-            <ul class="list-unstyled components" id="pills-tab" role="tablist" style="border: none;">
+            <ul class="nav flex-column list-unstyled components" id="pills-tab" role="tablist" style="border: none;">
                 <p>O seu pet do seu jeito!</p>
                 <li class="nav-item">
-                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                    <a class="nav-link active" id="ToP-tab" data-toggle="tab" href="#ToP" role="tab" aria-controls="ToP" aria-selected="true">Todos os produtos</a>
                 </li>
                 <li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Só para meu pet</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-cachorro-tab" data-toggle="tab" href="#nav-cachorro" role="tab" aria-controls="nav-cachorro" aria-selected="false">Cachorro</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Cachorro</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Gato</a>
+                        <li>
+                            <a href="#">Gato</a>
                         </li>
                         <li>
                             <a href="#">Hamster</a>
@@ -44,7 +44,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+    <a class="nav-link" id="personalizar-tab" data-toggle="tab" href="#personalizar" role="tab" aria-controls="personalizar" aria-selected="false">Personalizar</a>
   </li>
             </ul>
         </nav>

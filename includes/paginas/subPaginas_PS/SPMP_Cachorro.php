@@ -1,1 +1,0 @@
-<div class="tab-pane fade" id="nav-cachorro" role="tabpanel" aria-labelledby="nav-cachorro-tab">DOG DOG DOG DOG</div>

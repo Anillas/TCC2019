@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complementos/meta.php"; ?>
-	<?php include "../complementos/link.php"; ?>
-	<link rel="stylesheet" type="text/css" href="../complementos/style_menuLateral.css">
-	<title>Produtos e Serviços</title>
+  <?php include "../complementos/meta.php"; ?>
+  <?php include "../complementos/link.php"; ?>
+  <link rel="stylesheet" type="text/css" href="../complementos/style_menuLateral.css">
+  <title>Produtos e Serviços</title>
 </head>
 <body>
-	<?php include "../complementos/menu.php"; ?>
-	<div class="wrapper">
+  <?php include "../complementos/menu.php"; ?>
+  <div class="wrapper">
         <nav id="sidebar" class="fixed-left">
             <ul class="list-unstyled components" id="pills-tab" role="tablist" style="border: none;">
                 <p>O seu pet do seu jeito!</p>
@@ -56,13 +56,13 @@
                 <?php include 'subPaginas_PS/personalizar.php'; ?>
             </div>
         </div>
-	<?php include "../complementos/footer.php"; ?>
-	<?php include "../complementos/script.php"; ?>
-	<script type="text/javascript" src="../../font-awesome/js/solid.js"></script>
+  <?php include "../complementos/footer.php"; ?>
+  <?php include "../complementos/script.php"; ?>
+  <script type="text/javascript" src="../../font-awesome/js/solid.js"></script>
     <!-- TALVEZ SEJA ESSENCIAL PRO MENU LATERAL
-	   <script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
+     <script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
     -->
-	<script type="text/javascript">
+  <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
