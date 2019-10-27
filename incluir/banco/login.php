@@ -1,6 +1,5 @@
 <?php
-	require 'conexao.php';
-    require '../complementos/init.php';
+	require SITE_ROOT_CONTROLE.DS.'conexao.php';
 	$usuario = isset($_POST["usuario"]) ? trim($_POST["usuario"]) : FALSE;
 	$senha = isset($_POST["senha"]) ? md5(trim($_POST["senha"])) : FALSE;
 	$sql_select_login = "SELECT `usuario`, `senha` FROM `login` WHERE usuario = '$usuario' AND senha = '$senha'";

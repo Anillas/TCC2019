@@ -1,12 +1,11 @@
+<?php require_once '../../controle/init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complementos/meta.php"; ?>
-	<?php include "../complementos/link.php"; ?>
-	<title>Cadastre-se</title>
+	<?php include LIB_COMPLEMENTOS.DS.'head.php'; ?>
 </head>
 <body>
-	<?php include "../complementos/menu_estatico.php"; ?>
+	<?php include "../complementos/menu.php"; ?>
 	<?php include "../banco/cadastro_usuario.php" ?>
 	<div class="mx-auto col-md-4">
 		<div class="card" style="background-color: #343a40;">

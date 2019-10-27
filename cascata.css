@@ -49,7 +49,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .parallax {
-  background-image: url("includes/imagens/img_01.jpg");
+  background-image: url("incluir/imagens/img_01.jpg");
 
   /* Set a specific height */
   height: 500px;
@@ -66,7 +66,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 .parallax1 {
-  background-image: url("includes/imagens/img_02.jpg");
+  background-image: url("incluir/imagens/img_02.jpg");
 
   /* Set a specific height */
   height: 500px;

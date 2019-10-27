@@ -1,12 +1,17 @@
-<?php require 'includes/complementos/init.php'; ?>
+<?php
+	require_once 'controle/init.php';
+	require SITE_ROOT_CONTROLE.DS.'Controlador.class.php';
+	$controller = new IndexController();
+  	$dados = $controller->getDados();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="includes/imagens/icons/favicon.png">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/all.css">
+	<link rel="icon" type="image/png" href="incluir/imagens/icons/favicon.png">
+	<link rel="stylesheet" href="incluir/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="incluir/font-awesome/css/all.css">
 	<link rel="stylesheet" type="text/css" href="cascata.css">
 	<title>Canis</title>
 </head>
@@ -21,19 +26,19 @@
 			
 			<?php if ($_SESSION['usuario'] == 'deslogado') { ?>
 				<li class="nav-item">
-					<a class="nav-link mb-0 h5 icone" href="includes/paginas/entrar.php"><i class="fas fa-door-closed antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-door-open novo" style="font-size: 110%; margin-right: 7.5px;"></i>Entrar</a>
+					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/entrar.php"><i class="fas fa-door-closed antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-door-open novo" style="font-size: 110%; margin-right: 7.5px;"></i>Entrar</a>
 				</li>
 			<?php } ?>
 			<?php if ($_SESSION['usuario'] == 'logado') { ?>
 				<li class="nav-item">
-					<a class="nav-link mb-0 h5 icone" href="includes/paginas/configurar.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
+					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/configurar.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
 				</li>
 			<?php } ?>
 			<li class="nav-item">
-				<a class="nav-link mb-0 h5 icone" href="includes/paginas/produtos_servicos.php"><i class="fas fa-shopping-cart antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-cart-plus novo" style="font-size: 100%; padding-right: 10px;"></i>Produtos e Serviços</a>
+				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/produtos_servicos.php"><i class="fas fa-shopping-cart antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-cart-plus novo" style="font-size: 100%; padding-right: 10px;"></i>Produtos e Serviços</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link mb-0 h5 icone" href="includes/paginas/sobre.php" tabindex="-1" aria-disabled="true"><i class="fas fa-paw" style="font-size: 100%; padding-right: 10px;"></i>Sobre</a>
+				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/sobre.php" tabindex="-1" aria-disabled="true"><i class="fas fa-paw" style="font-size: 100%; padding-right: 10px;"></i>Sobre</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
@@ -73,9 +78,9 @@
 
 
 
-	<?php include "includes/complementos/footer.php"; ?>
-	<script src="bootstrap/js/bootstrap.slim.js"></script>
-	<script src="bootstrap/js/bootstrap.popper.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<?php include "incluir/complementos/footer.php"; ?>
+	<script src="incluir/bootstrap/js/bootstrap.slim.js"></script>
+	<script src="incluir/bootstrap/js/bootstrap.popper.js"></script>
+	<script src="incluir/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

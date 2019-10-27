@@ -1,8 +1,8 @@
+<?php require_once '../../controle/init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complementos/meta.php"; ?>
-	<?php include "../complementos/link.php"; ?>
+	<?php include LIB_COMPLEMENTOS.DS.'head.php'; ?>
 	<link rel="stylesheet" type="text/css" href="../complementos/style_menuLateral.css">
 	<title>Produtos e Serviços</title>
 </head>
@@ -58,7 +58,7 @@
         </div>
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
-	<script type="text/javascript" src="../../font-awesome/js/solid.js"></script>
+	<script type="text/javascript" src="../font-awesome/js/solid.js"></script>
     <!-- TALVEZ SEJA ESSENCIAL PRO MENU LATERAL
 	   <script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
     -->

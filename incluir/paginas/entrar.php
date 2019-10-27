@@ -1,13 +1,12 @@
 <?php ob_start() ?>
+<?php require_once '../../controle/init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complementos/meta.php"; ?>
-	<?php include "../complementos/link.php"; ?>
-	<title>Entrar</title>
+  <?php include LIB_COMPLEMENTOS.DS.'head.php'; ?>
 </head>
 <body>
-	<?php include "../complementos/menu_entrar.php"; ?>
+	<?php include "../complementos/menu.php"; ?>
 	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   	<div class="modal-dialog modal-dialog-centered" role="document">
     	<div class="modal-content text-warning" style="background-color: #343a40">

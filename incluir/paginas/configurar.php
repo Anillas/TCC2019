@@ -1,9 +1,8 @@
+<?php require_once '../../controle/init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include "../complementos/meta.php"; ?>
-	<?php include "../complementos/link.php"; ?>
-	<title>Sobre</title>
+	<?php include LIB_COMPLEMENTOS.DS.'head.php'; ?>
 </head>
 <body>
 	<?php include "../complementos/menu.php"; ?>
