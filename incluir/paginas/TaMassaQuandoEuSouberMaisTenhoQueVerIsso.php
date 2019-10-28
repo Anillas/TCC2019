@@ -72,3 +72,11 @@
     </script>
 </body>
 </html>
+
+<style type="text/css">
+      -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    
+</style>

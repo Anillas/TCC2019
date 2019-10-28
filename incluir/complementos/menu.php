@@ -30,7 +30,6 @@
 			</form>
 		</div>
 	</nav>
-	<div class="mb-5"></div>
 <?php } ?>
 <?php if($linkAtivo == "entrar.php"){ ?>
 	<nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -44,7 +43,6 @@
 		</div>
 		<button class="btn btn-outline-warning my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModalCenter">Cadastrar-se</button>
 	</nav>
-	<div class="mb-5"></div>
 <?php } ?>
 <?php if($linkAtivo == "cadastrar.php"){ ?>
 	<nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -57,5 +55,5 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="mb-5"></div>
 <?php } ?>
+<br><br>

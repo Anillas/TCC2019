@@ -1,5 +1,8 @@
 <?php ob_start() ?>
-<?php require_once '../../controle/init.php'; ?>
+<?php
+  require_once '../../controle/init.php';
+  require SITE_ROOT_CONTROLE.DS.'Controlador.class.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>

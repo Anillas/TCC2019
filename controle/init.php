@@ -16,6 +16,7 @@
 	define('LIB_FONT-AWESOME',SITE_ROOT_INCLUIR.DS.'font-awesome');
 	define('LIB_IMAGENS',SITE_ROOT_INCLUIR.DS.'imagens');
 	define('LIB_JQUERY',SITE_ROOT_INCLUIR.DS.'jQuery');
+	define('LIB_MDBOOTSTRAP',SITE_ROOT_INCLUIR.DS.'mdbootstrap');
 	define('LIB_PAGINAS',SITE_ROOT_INCLUIR.DS.'paginas');
 	$linkAtivo = basename($_SERVER['SCRIPT_NAME']);
 ?>

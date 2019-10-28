@@ -1,4 +1,7 @@
-<?php require_once '../../controle/init.php'; ?>
+<?php
+    require_once '../../controle/init.php';
+    require SITE_ROOT_CONTROLE.DS.'Controlador.class.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,6 +59,7 @@
                 <?php include 'subPaginas_PS/personalizar.php'; ?>
             </div>
         </div>
+    </div>
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../font-awesome/js/solid.js"></script>

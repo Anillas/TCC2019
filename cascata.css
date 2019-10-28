@@ -82,3 +82,39 @@ input[type=number]::-webkit-outer-spin-button {
     background-attachment: scroll;
   }
 }
+footer.page-footer {
+  bottom: 0;
+  color: #fff;
+}
+footer.page-footer .container-fluid {
+    width: auto;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer.page-footer a {
+    color: #fff;
+}
+.font-small {
+    font-size: 0.9rem;
+}
+.elegant-color-dark {
+  background-color: #212121 !important;
+}
+.elegant-color-dark.darken-3 {
+  background-color: #212121 !important;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.fa-instagram{
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);      
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
