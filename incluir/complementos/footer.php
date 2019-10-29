@@ -1,9 +1,18 @@
-<?php if($linkAtivo == "cadastrar.php" || $linkAtivo == "entrar.php"){}else{?>
+<?php if($linkAtivo == "cadastrar.php" || $linkAtivo == "entrar.php"){?>
+  <footer class="fixed-bottom page-footer font-small elegant-color-dark darken-3">
+    <div class="footer-copyright text-center pt-3">© 2019 Copyright:
+      <a href="https://github.com/Anillas">Vinícius Dias</a>
+    </div>
+    <div class="footer-copyright text-center pb-2">
+      Nanos gigantum humeris insidentes
+    </div>
+  </footer>
+<?php }else{?>
   <footer class="page-footer font-small elegant-color-dark darken-3">
     <div class="container">
       <div class="row">
         <div class="col-md-12 py-5 text-center">
-            <h2>♥ Canis ♥</h2>
+            <h2 class="mlc"><i class="fa fa-heart red"></i>  Canis  <i class="fa fa-heart red"></i></h2>
           <div class="mb-5 flex-center">
 
             <!-- Facebook -->
@@ -13,10 +22,6 @@
             <!-- Twitter -->
             <a class="tw-ic">
               <i class="fab fa-twitter white-text mr-md-5 mr-3 fa-2x" style="color: #00aced"> </i>
-            </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g white-text mr-md-5 mr-3 fa-2x" style="color: #d34836"> </i>
             </a>
             <!--Linkedin -->
             <a class="li-ic">
@@ -35,8 +40,11 @@
       </div>
     </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div class="footer-copyright text-center pt-3">© 2019 Copyright:
       <a href="https://github.com/Anillas">Vinícius Dias</a>
+    </div>
+    <div class="footer-copyright text-center pb-2">
+      Nanos gigantum humeris insidentes
     </div>
     <!-- Copyright -->
   </footer>
