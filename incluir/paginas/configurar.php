@@ -1,6 +1,9 @@
 <?php
 	require_once '../../controle/init.php';
 	require SITE_ROOT_CONTROLE.DS.'Controlador.class.php';
+	if ($_SESSION['usuario'] == "deslogado") {
+		header("location: ../../index.php");
+	}
 ?>
 <!DOCTYPE html>
 <html>
