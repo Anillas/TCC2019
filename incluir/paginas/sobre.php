@@ -80,7 +80,7 @@
       <i class="fas fa-chevron-down"></i> </span> </div>
   </li>
   <li class="transition">
-    <div class="wrapper"> <img class="transition" src="../imagens/equipe/vinicius.png">
+    <div class="wrapper"> <img class="transition" src="../imagens/equipe/vinicius.png" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
       <ul class="social about">
         <li>Passou muito estresse nesse trabalho, agora só quer relaxar. <br>
           Encontre-me em:</li>

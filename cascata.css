@@ -293,3 +293,41 @@ a:link{
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/* ----- LABEL -----*/
+
+
+
+.addon {
+  position:absolute;
+  top:25%; right:2.5%;
+  z-index:10;
+  border:none;
+  background:transparent;
+  outline:none;
+}
+.fa-eye{
+  right: 3%;
+  color: transparent;
+}
+.fa-eye-slash{
+    color: black;
+}
+.addon-g:hover .fa-eye{
+  color: black;
+}
+.addon-g:hover .fa-eye-slash{
+    color: transparent;
+}
+.input-group-senha {
+  position: relative;
+}
+
+.input-group-senha input {
+  width: 100%;
+}
+#progress-bar::-webkit-progress-value {
+background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+}
