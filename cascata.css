@@ -315,10 +315,10 @@ a:link{
 .fa-eye-slash{
     color: black;
 }
-.addon-g:hover .fa-eye{
+.addon-g:active .fa-eye{
   color: black;
 }
-.addon-g:hover .fa-eye-slash{
+.addon-g:active .fa-eye-slash{
     color: transparent;
 }
 .input-group-senha {

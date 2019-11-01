@@ -251,6 +251,10 @@ olho.mouseup(function() {
 olho.mouseout(function() { 
   senha.attr("type", "password");
 });
+
+senha.bind('paste', function(e) {
+  e.preventDefault();
+});
 </script>
 
 

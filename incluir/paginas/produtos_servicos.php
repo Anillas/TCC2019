@@ -18,7 +18,11 @@
                 <li class="nav-item">
                     <a class="nav-link active" id="ToP-tab" data-toggle="tab" href="#ToP" role="tab" aria-controls="ToP" aria-selected="true">Todos os produtos</a>
                 </li>
-                <li>
+
+
+
+
+                <!--li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Só para meu pet</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -45,10 +49,14 @@
                             <a href="#">Roupas</a>
                         </li>
                     </ul>
-                </li>
+                </li-->
+
+
+
+
                 <li class="nav-item">
-    <a class="nav-link" id="personalizar-tab" data-toggle="tab" href="#personalizar" role="tab" aria-controls="personalizar" aria-selected="false">Personalizar</a>
-  </li>
+                    <a class="nav-link" id="personalizar-tab" data-toggle="tab" href="#personalizar" role="tab" aria-controls="personalizar" aria-selected="false">Personalizar</a>
+                  </li>
             </ul>
         </nav>
         <div id="content">
@@ -63,9 +71,6 @@
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../font-awesome/js/solid.js"></script>
-    <!-- TALVEZ SEJA ESSENCIAL PRO MENU LATERAL
-	   <script type="text/javascript" src="../../font-awesome/js/fontawesome.min.js"></script>
-    -->
 	<script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
