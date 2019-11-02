@@ -45,15 +45,35 @@
 		</form>
 	</div>
 </nav>
+
+
+
+
 <div class="mt-5">
 	<div class="parallax">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center py-5">
 			<div class="col-6 pt-5">
 				<div class="card border-warning p-4" style="opacity: 0.85;">
 					<h3>A Canis</h3>
 					<h5>
 					Nossa empresa surgiu com o objetivo de levar aos donos de animais de estimação a possibilidade de dar algo para seus bichinhos que sempre gostariam que eles tivessem. Não importa de que esfera cultural nossos clientes fazem parte, temos produtos para todos os gostos! E caso alguém ainda sinta falta de uma representação, tem a total liberdade de colocar a mão na massa e personalizar o seu próprio produto, para o seu melhor amigo.
 					</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="parallaxE1">
+		<div class="justify-content-center dog" style="height: 600px;">
+			<div class="col-6 face">
+				<div class="olhos">
+					<div class="olho">
+						<div class="iris">
+						</div>
+					</div>
+					<div class="olho">
+						<div class="iris">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -75,6 +95,19 @@
 
 
 
+
+	<script type="text/javascript">
+		var iris = document.getElementsByClassName("iris");
+		document.onmousemove = function(){
+			var x = event.clientX * 100 / window.innerWidth + "%";
+			var y = event.clientY * 100 / window.innerHeight + "%";
+			for(var i=0;i<2;i++){
+				iris[i].style.left = x;
+				iris[i].style.top = y;
+				iris[i].style.transform = "translate(-"+x+",-"+y+")";
+			}
+		}
+	</script>
 	<?php include "incluir/complementos/footer.php"; ?>
 	<script src="incluir/bootstrap/js/bootstrap.slim.js"></script>
 	<script src="incluir/bootstrap/js/bootstrap.popper.js"></script>

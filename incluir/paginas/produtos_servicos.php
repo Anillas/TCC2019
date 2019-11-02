@@ -10,10 +10,11 @@
 	<title>Produtos e Serviços</title>
 </head>
 <body>
+
 	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
         <nav id="sidebar" class="fixed-left">
-            <ul class="nav flex-column list-unstyled components" id="pills-tab" role="tablist" style="border: none;">
+            <ul class="nav flex-column list-unstyled components" id="pills-tab" role="tablist" style="border: none; position: fixed;">
                 <p>O seu pet do seu jeito!</p>
                 <li class="nav-item">
                     <a class="nav-link active" id="ToP-tab" data-toggle="tab" href="#ToP" role="tab" aria-controls="ToP" aria-selected="true">Todos os produtos</a>
@@ -68,6 +69,28 @@
             </div>
         </div>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../font-awesome/js/solid.js"></script>

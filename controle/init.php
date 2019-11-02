@@ -8,6 +8,7 @@
 	define('SITE_ROOT',ROOT.DS.'TCC2019');
 	define('SITE_ROOT_CONTROLE',SITE_ROOT.DS.'controle');
 	define('SOURCE_BUSCAR',SITE_ROOT_CONTROLE.DS.'buscar');
+	define('SOURCE_MOSTRAR',SITE_ROOT_CONTROLE.DS.'mostrar');
 	define('SOURCE_SELECIONAR',SITE_ROOT_CONTROLE.DS.'selecionar');
 	define('SITE_ROOT_INCLUIR',SITE_ROOT.DS.'incluir');
 	define('LIB_BANCO',SITE_ROOT_INCLUIR.DS.'banco');
@@ -19,4 +20,5 @@
 	define('LIB_MDBOOTSTRAP',SITE_ROOT_INCLUIR.DS.'mdbootstrap');
 	define('LIB_PAGINAS',SITE_ROOT_INCLUIR.DS.'paginas');
 	$linkAtivo = basename($_SERVER['SCRIPT_NAME']);
+	require 'conexao.php';
 ?>

@@ -3,6 +3,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	background: #fc0;
+  overflow-x: hidden;
 }
 .novo{
 	display: none
@@ -47,40 +48,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-
-.parallax {
-  background-image: url("incluir/imagens/img_01.jpg");
-
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-.parallax1 {
-  background-image: url("incluir/imagens/img_02.jpg");
-
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only screen and (max-device-width: 1366px) {
-  .parallax1 {
-    background-attachment: scroll;
-  }
+#nomeUsuario, #sobrenomeUsuario{
+  text-transform: capitalize;
 }
 
 /*  FOOTER  */
@@ -330,4 +299,85 @@ a:link{
 }
 #progress-bar::-webkit-progress-value {
 background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+}
+
+
+
+.parallax {
+  background-image: url("incluir/imagens/img_01.jpg");
+
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+.parallax1 {
+  background-image: url("incluir/imagens/img_02.jpg");
+
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .parallax1 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+.dog{
+  background-color: #a9896e;
+  background-image: url("incluir/imagens/dog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.face{
+  user-select: none;
+  min-width: 100%;
+  top: 50%;
+  justify-content: center;
+}
+.olhos{
+  height: 100%;
+  position: relative;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+}
+.olho{
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.iris{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
 }

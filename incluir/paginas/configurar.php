@@ -138,7 +138,7 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="cidadeUsuario">Cidade</label>
-      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" data-toggle="popover" data-trigger="focus" required>
+      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" data-toggle="popover" data-trigger="focus" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -148,7 +148,7 @@
     </div>
     <div class="col-md-3 mb-3">
       <label for="estadoUsuario">Estado</label>
-      <input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Estado" required>
+      <input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Estado" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -160,7 +160,7 @@
   <div class="form-row">
   	<div class="col-md-5 mb-3">
       <label for="bairroUsuario">Bairro</label>
-      <input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" data-toggle="popover" data-trigger="focus" required>
+      <input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" data-toggle="popover" data-trigger="focus" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -170,7 +170,7 @@
     </div>
     <div class="col-md-5 mb-3">
       <label for="ruaUsuario">Rua</label>
-      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" data-toggle="popover" data-trigger="focus" required>
+      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" data-toggle="popover" data-trigger="focus" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -180,7 +180,7 @@
     </div>
     <div class="col-md-2 mb-3">
       <label for="estadoUsuario">Número</label>
-      <input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Número" required>
+      <input type="number" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Número" required>
       <div class="valid-feedback">
         Bom!
       </div>
