@@ -5,6 +5,22 @@ body{
 	background: #fc0;
   overflow-x: hidden;
 }
+
+
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px 5px 5px 5px;
+  background: #fc0;
+  border-left: 2px solid black;
+}
+
+
 .novo{
 	display: none
 }
@@ -347,6 +363,18 @@ background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,
   background-repeat: no-repeat;
   background-size: 60%;
 }
+/*
+.olho:active .iris{
+  background-color: red;
+}
+*/
+.ham{
+  background-color: #a9896e;
+  background-image: url("incluir/imagens/hamster.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
 .face{
   user-select: none;
   min-width: 100%;
@@ -365,8 +393,8 @@ background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,
   height: 80px;
   background-color: #000;
   display: inline-block;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 50%;
   position: relative;
   overflow: hidden;

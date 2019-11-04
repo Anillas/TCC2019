@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="parallaxE1">
+	<div class="parallaxA">
 		<div class="justify-content-center dog" style="height: 600px;">
 			<div class="col-6 face">
 				<div class="olhos">
@@ -90,11 +90,23 @@
 			</div>
 		</div>
 	</div>
+	<div class="parallaxA">
+		<div class="justify-content-center ham" style="height: 600px;">
+			<div class="col-6 face">
+				<div class="olhos">
+					<div class="olho">
+						<div class="iris">
+						</div>
+					</div>
+					<div class="olho">
+						<div class="iris">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
-
-
-
 
 	<script type="text/javascript">
 		var iris = document.getElementsByClassName("iris");

@@ -107,7 +107,7 @@
           </div>
         </label>
         <div class="input-group-senha">
-      	<input type="password" class="form-control senha" name="novaSenha" id="novaSenha" placeholder="Senha" required>
+      	<input type="password" class="form-control senha" name="novaSenha" id="novaSenha" placeholder="Senha" length="6"  maxlength="25" required>
         <div class="addon-g">
         <i class="fas fa-eye-slash addon"></i>
         <i class="fas fa-eye addon" id="olho"></i>
@@ -138,7 +138,7 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="cidadeUsuario">Cidade</label>
-      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" data-toggle="popover" data-trigger="focus" readonly="true" required>
+      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -160,7 +160,7 @@
   <div class="form-row">
   	<div class="col-md-5 mb-3">
       <label for="bairroUsuario">Bairro</label>
-      <input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" data-toggle="popover" data-trigger="focus" readonly="true" required>
+      <input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -170,7 +170,7 @@
     </div>
     <div class="col-md-5 mb-3">
       <label for="ruaUsuario">Rua</label>
-      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" data-toggle="popover" data-trigger="focus" readonly="true" required>
+      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
