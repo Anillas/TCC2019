@@ -31,11 +31,8 @@
       <ul class="social">
         <li>Teve preguiça de escrever algo... <br>
           Encontre-me em:</li>
-        <li class="transition"><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitch" style="color: #6441a5"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitter" style="color: #1da1f2"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-steam" style="color: #00adee"></i></a></li>
+        <li class="transition"><a href="https://www.facebook.com/Edsonryk/"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
+        <li class="transition"><a href="https://www.instagram.com/cafzera/"><i class="fab fa-instagram"></i></a></li>
       </ul>
       <span class="transition">
       <h3>Edson Ramires <em>Faxineiro</em></h3>
@@ -50,11 +47,7 @@
       <ul class="social">
         <li>Teve preguiça de escrever algo... <br>
           Encontre-me em:</li>
-        <li class="transition"><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitch" style="color: #6441a5"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitter" style="color: #1da1f2"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-steam" style="color: #00adee"></i></a></li>
+        <li class="transition text-danger">Não mandou os links :(</li>
       </ul>
       <span class="transition">
       <h3>João Vitor <em>Administrador</em></h3>
@@ -67,11 +60,7 @@
       <ul class="social">
         <li>Teve preguiça de escrever algo... <br>
           Encontre-me em:</li>
-        <li class="transition"><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitch" style="color: #6441a5"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-twitter" style="color: #1da1f2"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-steam" style="color: #00adee"></i></a></li>
+        <li class="transition"><a href="https://www.facebook.com/profile.php?id=100035264889117"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
       </ul>
       <span class="transition">
       <h3>Kléber Oliveira <em>Gerente</em></h3>
@@ -84,11 +73,15 @@
       <ul class="social about">
         <li>Passou muito estresse nesse trabalho, agora só quer relaxar. <br>
           Encontre-me em:</li>
-        <li class="transition"><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
+          <li class="transition"><a href="https://www.facebook.com/salina.292"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
+          <li class="transition"><a href="https://www.github.com/Anillas"><i class="fab fa-github" style="color: #323131"></i></a></li>
+          <li class="transition"><a href="https://api.whatsapp.com/send?phone=5567992610290&text=Fala,%20Anillas!!"><i class="fab fa-whatsapp" style="color: #25d366"></i></a></li>
+
+        <!--li class="transition"><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998"></i></a></li>
         <li class="transition"><a href="#"><i class="fab fa-instagram"></i></a></li>
         <li class="transition"><a href="#"><i class="fab fa-twitch" style="color: #6441a5"></i></a></li>
         <li class="transition"><a href="#"><i class="fab fa-twitter" style="color: #1da1f2"></i></a></li>
-        <li class="transition"><a href="#"><i class="fab fa-steam" style="color: #00adee"></i></a></li>
+        <li class="transition"><a href="#"><i class="fab fa-steam" style="color: #00adee"></i></a></li-->
       </ul>
       <span class="transition">
       <h3>Vinícius Dias <em>CEO e Desenvolvedor</em></h3>

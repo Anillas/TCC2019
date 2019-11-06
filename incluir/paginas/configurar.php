@@ -28,11 +28,11 @@
 
 <div class="pt-5 container bootstrap snippet">
     <div class="row">
-  		<div class="col-sm-3"><!--left col-->
-            <div class="text-center">
-				<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
-				Fulano de Tal
-			</div><br>
+  		<div class="col-sm-3 text-center"><!--left col-->
+            <div class="justify-content-center" style="display: inline-grid;">
+        				  <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                  Fulano de Tal
+      			</div><br>
 			<ul class="list-group">
 				<li class="list-group-item text-muted">Atividade <i class="fa fa-dashboard fa-1x"></i></li>
 				<li class="list-group-item"><span class="pull-left"><strong>Salvos</strong></span> 125</li>
@@ -179,8 +179,8 @@
       </div>
     </div>
     <div class="col-md-2 mb-3">
-      <label for="estadoUsuario">Número</label>
-      <input type="number" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Número" required>
+      <label for="numeroUsuario">Número</label>
+      <input type="text" class="form-control" name="numeroUsuario" id="numeroUsuario" placeholder="Número" pattern="[0-9]" required>
       <div class="valid-feedback">
         Bom!
       </div>

@@ -13,35 +13,35 @@
       <div class="row">
         <div class="col-md-12 py-5 text-center">
             <h2 class="mlc"><i class="fa fa-heart red"></i>  Canis  <i class="fa fa-heart red"></i></h2>
-          <div class="mb-5 flex-center">
+          <!--div class="mb-5 flex-center">
 
-            <!-- Facebook -->
+            <! -- Facebook - ->
             <a class="fb-ic">
               <i class="fab fa-facebook-f white-text mr-md-5 mr-3 fa-2x" style="color: #3b5998"> </i>
             </a>
-            <!-- Twitter -->
+            <! -- Twitter - ->
             <a class="tw-ic">
               <i class="fab fa-twitter white-text mr-md-5 mr-3 fa-2x" style="color: #00aced"> </i>
             </a>
-            <!--Linkedin -->
+            <! --Linkedin - ->
             <a class="li-ic">
               <i class="fab fa-linkedin-in white-text mr-md-5 mr-3 fa-2x" style="color: #0077b5"> </i>
             </a>
-            <!--Instagram-->
+            <! --Instagram- ->
             <a class="ins-ic">
               <i class="fab fa-instagram white-text mr-md-5 mr-3 fa-2x"> </i>
             </a>
-            <!--Pinterest-->
+            <! --Pinterest- ->
             <a class="pin-ic">
               <i class="fab fa-pinterest white-text fa-2x" style="color: #bd081c"> </i>
             </a>
-          </div>
+          </div-->
         </div>
       </div>
     </div>
     <!-- Copyright -->
     <div class="footer-copyright text-center pt-3">© 2019 Copyright:
-      <a href="https://github.com/Anillas">Vinícius Dias</a>
+      <a href="https://github.com/Anillas" target="blank">Vinícius Dias</a>
     </div>
     <div class="footer-copyright text-center pb-2">
       Nanos gigantum humeris insidentes

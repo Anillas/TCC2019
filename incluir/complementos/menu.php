@@ -24,10 +24,10 @@
 					<a class="nav-link mb-0 h5 icone" href="sobre.php" tabindex="-1" aria-disabled="true"><i <?php if($linkAtivo == "sobre.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-paw" style="font-size: 100%; margin-right: 10px;"></i>Sobre</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
+			<!--form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
 				<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
-			</form>
+			</form-->
 		</div>
 	</nav>
 <?php } ?>

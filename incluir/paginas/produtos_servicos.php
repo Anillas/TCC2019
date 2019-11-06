@@ -13,7 +13,7 @@
 
 	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
-        <nav id="sidebar" class="fixed-left">
+        <!--nav id="sidebar" class="fixed-left">
             <ul class="nav flex-column list-unstyled components" id="pills-tab" role="tablist" style="border: none; position: fixed;">
                 <p>O seu pet do seu jeito!</p>
                 <li class="nav-item">
@@ -23,7 +23,7 @@
 
 
 
-                <!--li>
+                <! --li>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Só para meu pet</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -50,7 +50,7 @@
                             <a href="#">Roupas</a>
                         </li>
                     </ul>
-                </li-->
+                </li- ->
 
 
 
@@ -59,7 +59,8 @@
                     <a class="nav-link" id="personalizar-tab" data-toggle="tab" href="#personalizar" role="tab" aria-controls="personalizar" aria-selected="false">Personalizar</a>
                   </li>
             </ul>
-        </nav>
+        </nav-->
+
         <div id="content">
             <div class="tab-content" id="pills-tabContent">
                 <?php include 'subPaginas_PS/todosProdutos.php'; ?>

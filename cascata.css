@@ -15,7 +15,6 @@ body{
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px 5px 5px 5px;
   background: #fc0;
   border-left: 2px solid black;
 }
@@ -357,34 +356,40 @@ background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,
 
 
 .dog{
-  background-color: #a9896e;
-  background-image: url("incluir/imagens/dog.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 60%;
+  background-color: ;
 }
 /*
 .olho:active .iris{
   background-color: red;
 }
 */
-.ham{
-  background-color: #a9896e;
-  background-image: url("incluir/imagens/hamster.png");
-  background-position: center;
+.lhama{
+  background-color: #FFCCE5;
+}
+.cara{
+  background-image: url("incluir/imagens/lhama_branca.png");
+  width: 500px;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 60%;
 }
+.cara:active{
+  background-image: url("incluir/imagens/lhama_branca_lingua.png");
+}
 .face{
+  background-image: url("incluir/imagens/dog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  width: 1000px;
   user-select: none;
-  min-width: 100%;
-  top: 50%;
+  min-width: 1000px;
   justify-content: center;
 }
 .olhos{
   height: 100%;
   position: relative;
-  top: 75%;
+  top: 50%;
   width: 100%;
   text-align: center;
 }

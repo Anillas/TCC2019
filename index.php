@@ -64,18 +64,20 @@
 	</div>
 	<div class="parallaxA">
 		<div class="justify-content-center dog" style="height: 600px;">
-			<div class="col-6 face">
-				<div class="olhos">
-					<div class="olho">
-						<div class="iris">
+			<center>
+				<div class="col-6 face" style="height: 600px;">
+					<div class="olhos">
+						<div class="olho">
+							<div class="iris">
+							</div>
 						</div>
-					</div>
-					<div class="olho">
-						<div class="iris">
+						<div class="olho">
+							<div class="iris">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</center>
 		</div>
 	</div>
 	<div class="parallax1">
@@ -91,19 +93,11 @@
 		</div>
 	</div>
 	<div class="parallaxA">
-		<div class="justify-content-center ham" style="height: 600px;">
-			<div class="col-6 face">
-				<div class="olhos">
-					<div class="olho">
-						<div class="iris">
-						</div>
+		<div class="justify-content-center lhama" style="height: 600px;">
+			<center>
+					<div class="cara" style="height: 600px;">
 					</div>
-					<div class="olho">
-						<div class="iris">
-						</div>
-					</div>
-				</div>
-			</div>
+			</center>
 		</div>
 	</div>
 </div>
