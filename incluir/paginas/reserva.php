@@ -54,9 +54,9 @@
 	      </div>
 	      <div class="modal-body">
 	       
-
+<!--CRIAR UMA ARRAY DENTRO DE OUTRA E MANDAR ESSES DADOS E SALVAR TUDO DENTRO DA ARRAY ID QUE VAI FICAR DENTRO DA ARRAY RESERVAS-->
    <form action="produtos_servicos.php" method="POST" class="range-field my-5">
-      <?php echo '<input id="barra" class="custom-range" type="range" name="quantidade" value="1" min="1" max="'.$quantidadePR.'" />'?>
+      <?php echo '<input id="barra" class="custom-range" type="range" name="quantidade" value="1" min="1" max="'.$quantidadePR.'" />'; echo "<input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required>";?>
     <div class="row">
       <div class="col-md-6 text-center pb-5">
         <h3><span class="badge blue lighten-2 mb-4">Quantidade</span></h3>

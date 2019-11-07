@@ -10,9 +10,6 @@
 	<title>Produtos e Serviços</title>
 </head>
 <body>
-    <?php
-        array_push($_SESSION['reservas'], '1');
-    ?>
 	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
         <!--nav id="sidebar" class="fixed-left">
@@ -71,9 +68,19 @@
                 <?php include 'subPaginas_PS/personalizar.php'; ?>
             </div>
         </div>
-         <button class="btn btn-success finalizar_reserva">
-        Compra bem mal sucedida!
-    </button>
+
+
+<?php
+    array_push($_SESSION['reservas']);
+?>
+<?php
+    if (!empty($_SESSION['reservas'])) {
+        echo '<button class="btn btn-success finalizar_reserva">
+            Compra bem mal sucedida!
+        </button>';
+    }
+?>
+
     </div>
    
 
