@@ -25,10 +25,11 @@
 	              		<h5 class='card-title align'> R$ ".$preco."</h5>
 	              		<p class='card-text' style='min-height: 5ch; max-height: 20ch;overflow: hidden;text-overflow: ellipsis;''>".$descricao."</p>
 	              		<form method='POST' action='reserva.php'>
-	              			<input type='text' name='idProduto'  value='".$id."' style='display: none;' required>
+	              			<input type='text' name='idProduto'  value='".$id."' style='display: none;' required>"
+	              			if ($_SESSION['user'] == 'deslogado') { echo 'Entre para poder comprar';}else{echo "
 		              		<button type='submit' class='btn btn-warning'>
 							  Reservar
-							</button>
+							</button>"}
         				</form>
 		            </div>
 	        	</div>

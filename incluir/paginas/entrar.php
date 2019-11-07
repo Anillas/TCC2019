@@ -216,7 +216,7 @@
 	<?php include "../complementos/footer.php"; ?>
   <script src="../jQuery/jquery.apigs.min.js"></script>
   <script>
-var senha = $('#novaSenha');
+var senha = $('#senha');
 var olho= $("#olho");
 
 olho.mousedown(function() {
@@ -241,7 +241,7 @@ senha.bind('paste', function(e) {
   //Necessita do bootstrap e jquery
 //forca da senha
 $(function (){
-  $('#novaSenha').keyup(function (e){
+  $('#senha').keyup(function (e){
       var senha = $(this).val();        
       if(senha == ''){
         $('#senhaBarra').hide();
@@ -279,7 +279,7 @@ $(function (){
       }
     });
 });
-    $('#novaSenha').focusout(function() { 
+    $('#senha').focusout(function() { 
   $('#lsa').css('display', 'block');
   $('#senhaBarra').hide();
 });

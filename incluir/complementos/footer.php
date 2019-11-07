@@ -1,6 +1,6 @@
 <?php if($linkAtivo == "cadastrar.php" || $linkAtivo == "entrar.php"){?>
   <footer class="fixed-bottom page-footer font-small elegant-color-dark darken-3">
-    <div class="footer-copyright text-center pt-3">© 2019 Copyright:
+    <div class="footer-copyright text-center pt-3">&copy; 2019 Copyright:
       <a href="https://github.com/Anillas">Vinícius Dias</a>
     </div>
     <div class="footer-copyright text-center pb-2">
