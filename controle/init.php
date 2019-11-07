@@ -1,7 +1,40 @@
 <?php
 	session_start();
+	if(empty($_SESSION['nomeUsuario'])){
+		$_SESSION['nomeUsuario'] = 'nomeUsuario';
+	}
+	if(empty($_SESSION['sobrenomeUsuario'])){
+		$_SESSION['sobrenomeUsuario'] = 'sobrenomeUsuario';
+	}
+	if(empty($_SESSION['telefoneUsuario'])){
+		$_SESSION['telefoneUsuario'] = 'telefoneUsuario';
+	}
+	if(empty($_SESSION['cpfUsuario'])){
+		$_SESSION['cpfUsuario'] = 'cpfUsuario';
+	}
 	if(empty($_SESSION['usuario'])){
-		$_SESSION['usuario'] = 'deslogado';
+		$_SESSION['usuario'] = 'usuario';
+	}
+	if(empty($_SESSION['cepUsuario'])){
+		$_SESSION['cepUsuario'] = 'cepUsuario';
+	}
+	if(empty($_SESSION['estadoUsuario'])){
+		$_SESSION['estadoUsuario'] = 'estadoUsuario';
+	}
+	if(empty($_SESSION['cidadeUsuario'])){
+		$_SESSION['cidadeUsuario'] = 'cidadeUsuario';
+	}
+	if(empty($_SESSION['bairroUsuario'])){
+		$_SESSION['bairroUsuario'] = 'bairroUsuario';
+	}
+	if(empty($_SESSION['logradouroUsuario'])){
+		$_SESSION['logradouroUsuario'] = 'logradouroUsuario';
+	}
+	if(empty($_SESSION['numeroUsuario'])){
+		$_SESSION['numeroUsuario'] = 'numeroUsuario';
+	}
+	if(empty($_SESSION['user'])){
+		$_SESSION['user'] = 'deslogado';
 	}
 	define('DS', DIRECTORY_SEPARATOR);
 	define('ROOT',$_SERVER['DOCUMENT_ROOT']);
@@ -21,4 +54,5 @@
 	define('LIB_PAGINAS',SITE_ROOT_INCLUIR.DS.'paginas');
 	$linkAtivo = basename($_SERVER['SCRIPT_NAME']);
 	require 'conexao.php';
+	$_SESSION['reservas'] = array();
 ?>

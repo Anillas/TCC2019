@@ -22,12 +22,12 @@
 				<a class="nav-link mb-0 h5 icone" href="index.php"><i class="fas fa-home" style="font-size: 100%; padding-right: 10px; color: #fff;"></i>Home</a>
 			</li>
 			
-			<?php if ($_SESSION['usuario'] == 'deslogado') { ?>
+			<?php if ($_SESSION['user'] == 'deslogado') { ?>
 				<li class="nav-item">
 					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/entrar.php"><i class="fas fa-door-closed antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-door-open novo" style="font-size: 110%; margin-right: 7.5px;"></i>Entrar</a>
 				</li>
 			<?php } ?>
-			<?php if ($_SESSION['usuario'] == 'logado') { ?>
+			<?php if ($_SESSION['user'] == 'logado') { ?>
 				<li class="nav-item">
 					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/configurar.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
 				</li>

@@ -20,7 +20,7 @@
         	</button>
       	</div>
       <div class="modal-body">
-        <form class="needs-validation" method="POST" action="configurar.php" novalidate>
+        <form class="needs-validation" method="POST" action="cadastrar.php" novalidate>
           <div class="form-row">
             <div class="col-md-4 mb-3">
               <label for="nomeUsuario">Nome</label>
@@ -65,12 +65,12 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <label for="novoUsuario">Username</label>
+              <label for="usuario">Username</label>
               <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroupPrepend">@</span>
                 </div>
-                <input type="text" class="form-control rounded-right" name="novoUsuario" id="novoUsuario" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                <input type="text" class="form-control rounded-right" name="usuario" id="usuario" placeholder="Username" aria-describedby="inputGroupPrepend" required>
                 <div class="valid-feedback">
                   Bom!
                 </div>
@@ -86,7 +86,7 @@
           </div>
         </label>
         <div class="input-group-senha">
-        <input type="password" class="form-control senha" name="novaSenha" id="novaSenha" placeholder="Senha" required>
+        <input type="password" class="form-control senha" name="senha" id="senha" placeholder="Senha" required>
         <div class="addon-g">
         <i class="fas fa-eye-slash addon"></i>
         <i class="fas fa-eye addon" id="olho"></i>
@@ -115,16 +115,6 @@
         Insira um CEP válido.
       </div>
     </div>
-    <div class="col-md-6 mb-3">
-      <label for="cidadeUsuario">Cidade</label>
-      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" readonly="true" required>
-      <div class="valid-feedback">
-        Bom!
-      </div>
-      <div class="invalid-feedback">
-        Insira uma cidade válida.
-      </div>
-    </div>
     <div class="col-md-3 mb-3">
       <label for="estadoUsuario">Estado</label>
       <input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Estado" readonly="true" required>
@@ -133,6 +123,16 @@
       </div>
       <div class="invalid-feedback">
         Insira um estado válido.
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="cidadeUsuario">Cidade</label>
+      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" readonly="true" required>
+      <div class="valid-feedback">
+        Bom!
+      </div>
+      <div class="invalid-feedback">
+        Insira uma cidade válida.
       </div>
     </div>
   </div>
@@ -148,8 +148,8 @@
       </div>
     </div>
     <div class="col-md-5 mb-3">
-      <label for="ruaUsuario">Rua</label>
-      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" readonly="true" required>
+      <label for="logradouroUsuario">Logradouro</label>
+      <input type="text" class="form-control" name="logradouroUsuario" id="ruaUsuario" placeholder="Logradouro" readonly="true" required>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -158,8 +158,8 @@
       </div>
     </div>
     <div class="col-md-2 mb-3">
-      <label for="estadoUsuario">Número</label>
-      <input type="number" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Número" required>
+      <label for="numeroUsuario">Número</label>
+      <input type="number" class="form-control" name="numeroUsuario" id="numeroUsuario" placeholder="Número" required>
       <div class="valid-feedback">
         Bom!
       </div>

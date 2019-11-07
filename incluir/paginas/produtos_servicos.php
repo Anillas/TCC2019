@@ -10,7 +10,9 @@
 	<title>Produtos e Serviços</title>
 </head>
 <body>
-
+    <?php
+        array_push($_SESSION['reservas'], '1');
+    ?>
 	<?php include "../complementos/menu.php"; ?>
 	<div class="wrapper">
         <!--nav id="sidebar" class="fixed-left">
@@ -69,39 +71,23 @@
                 <?php include 'subPaginas_PS/personalizar.php'; ?>
             </div>
         </div>
+         <button class="btn btn-success finalizar_reserva">
+        Compra bem mal sucedida!
+    </button>
     </div>
+   
 
-<!-- Modal -->
-<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
-      </div>
-    </div>
-  </div>
-</div>
     
 	<?php include "../complementos/footer.php"; ?>
 	<?php include "../complementos/script.php"; ?>
 	<script type="text/javascript" src="../font-awesome/js/solid.js"></script>
-	<script type="text/javascript">
+	<!--script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
         });
-    </script>
+    </script-->
 </body>
 </html>

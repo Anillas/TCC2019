@@ -9,8 +9,14 @@
 <?php if($linkAtivo == "entrar.php"){ ?>
 	<title>Entrar</title>
 <?php }?>
+<?php if($linkAtivo == "finalizar_reserva.php"){ ?>
+	<title>Finalizar</title>
+<?php }?>
 <?php if($linkAtivo == "produtos_servicos.php"){ ?>
 	<title>Produtos e Serviços</title>
+<?php }?>
+<?php if($linkAtivo == "reserva.php"){ ?>
+	<title>Reservar</title>
 <?php }?>
 <?php if($linkAtivo == "sobre.php"){ ?>
 	<title>Sobre</title>

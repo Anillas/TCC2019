@@ -414,3 +414,12 @@ background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,
   transform: translate(-50%,-50%);
   border-radius: 50%;
 }
+
+.finalizar_reserva{
+  position: fixed;
+  width: 150px;
+  height: 75px;
+  right: 0;
+  bottom: 0;
+  margin: 6px;
+}

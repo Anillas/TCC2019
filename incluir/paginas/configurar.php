@@ -45,7 +45,9 @@
   				<div class="form-row">
     				<div class="col-md-4 mb-3">
 				      <label for="nomeUsuario">Nome</label>
-				      <input type="text" class="form-control" name="nomeUsuario" id="nomeUsuario" placeholder="Nome" autofocus required>
+				      <?php
+                echo '<input type="text" class="form-control" name="nomeUsuario" id="nomeUsuario" placeholder="Nome" value="'.$_SESSION['nomeUsuario'].'" required>';
+              ?>
 				      <div class="valid-feedback">
 				        Bom!
 				      </div>
@@ -55,7 +57,9 @@
     				</div>
     				<div class="col-md-4 mb-3">
 				      <label for="sobrenomeUsuario">Sobrenome</label>
-				      <input type="text" class="form-control" name="sobrenomeUsuario" id="sobrenomeUsuario" placeholder="Sobrenome" required>
+				      <?php
+                echo '<input type="text" class="form-control" name="sobrenomeUsuario" id="sobrenomeUsuario" placeholder="Sobrenome" value="'.$_SESSION['sobrenomeUsuario'].'" required>';
+              ?>
 				      <div class="valid-feedback">
 				        Bom!
 				      </div>
@@ -65,7 +69,9 @@
    					</div>
   					<div class="col-md-4 mb-3">
 				      <label for="telefoneUsuario">Telefone</label>
-				      <input type="text" class="form-control" name="telefoneUsuario" id="telefoneUsuario" placeholder="(00) 00000-0000" required>
+              <?php
+			 	       echo '<input type="text" class="form-control" name="telefoneUsuario" id="telefoneUsuario" placeholder="(00) 00000-0000" value="'.$_SESSION['telefoneUsuario'].'" required>';
+               ?>
 				      <div class="valid-feedback">
 				        Bom!
 				      </div>
@@ -77,7 +83,9 @@
   				<div class="form-row">
   					<div class="col-md-4 mb-3">
 				      <label for="cpfUsuario">CPF</label>
-				      <input type="text" class="form-control" name="cpfUsuario" id="cpfUsuario" placeholder="000.000.000-00" readonly="true" required>
+              <?php
+				        echo '<input type="text" class="form-control" name="cpfUsuario" id="cpfUsuario" placeholder="000.000.000-00" readonly="true" value="'.$_SESSION['cpfUsuario'].'" required>';
+              ?>
 				      <div class="valid-feedback">
 				        Bom!
 				      </div>
@@ -91,7 +99,9 @@
 	        			<div class="input-group-prepend">
 			          	<span class="input-group-text" id="inputGroupPrepend">@</span>
 			        	</div>
-	        			<input type="text" class="form-control rounded-right" name="novoUsuario" id="novoUsuario" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                <?php
+	        			  echo '<input type="text" class="form-control rounded-right" name="novoUsuario" id="novoUsuario" placeholder="Username" aria-describedby="inputGroupPrepend" value="'.$_SESSION['usuario'].'" required>';
+                ?>
 				        <div class="valid-feedback">
 				          Bom!
 				        </div>
@@ -107,7 +117,7 @@
           </div>
         </label>
         <div class="input-group-senha">
-      	<input type="password" class="form-control senha" name="novaSenha" id="novaSenha" placeholder="Senha" length="6"  maxlength="25" required>
+      	<input type="password" class="form-control senha" name="novaSenha" id="novaSenha" placeholder="Senha" length="6"  maxlength="25" value="Essa não é a senha antiga" required>
         <div class="addon-g">
         <i class="fas fa-eye-slash addon"></i>
         <i class="fas fa-eye addon" id="olho"></i>
@@ -128,7 +138,9 @@
   <div class="form-row">
   	<div class="col-md-3 mb-3">
       <label for="cepUsuario">CEP</label>
-      <input type="text" class="form-control" name="cepUsuario" id="cepUsuario" placeholder="00000-000" required>
+      <?php
+        echo '<input type="text" class="form-control" name="cepUsuario" id="cepUsuario" placeholder="00000-000" value="'.$_SESSION['cepUsuario'].'" required>';
+      ?>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -136,19 +148,11 @@
         Insira um CEP válido.
       </div>
     </div>
-    <div class="col-md-6 mb-3">
-      <label for="cidadeUsuario">Cidade</label>
-      <input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" readonly="true" required>
-      <div class="valid-feedback">
-        Bom!
-      </div>
-      <div class="invalid-feedback">
-        Insira uma cidade válida.
-      </div>
-    </div>
     <div class="col-md-3 mb-3">
       <label for="estadoUsuario">Estado</label>
-      <input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Estado" readonly="true" required>
+      <?php
+        echo '<input type="text" class="form-control" name="estadoUsuario" id="estadoUsuario" placeholder="Estado" readonly="true" value="'.$_SESSION['estadoUsuario'].'" required>';
+      ?>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -156,11 +160,25 @@
         Insira um estado válido.
       </div>
     </div>
+    <div class="col-md-6 mb-3">
+      <label for="cidadeUsuario">Cidade</label>
+      <?php
+        echo '<input type="text" class="form-control" name="cidadeUsuario" id="cidadeUsuario" placeholder="Cidade" readonly="true" value="'.$_SESSION['cidadeUsuario'].'" required>';
+      ?>
+      <div class="valid-feedback">
+        Bom!
+      </div>
+      <div class="invalid-feedback">
+        Insira uma cidade válida.
+      </div>
+    </div>
   </div>
   <div class="form-row">
   	<div class="col-md-5 mb-3">
       <label for="bairroUsuario">Bairro</label>
-      <input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" readonly="true" required>
+      <?php
+        echo '<input type="text" class="form-control" name="bairroUsuario" id="bairroUsuario" placeholder="Bairro" readonly="true" value="'.$_SESSION['bairroUsuario'].'" required>';
+      ?>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -169,8 +187,10 @@
       </div>
     </div>
     <div class="col-md-5 mb-3">
-      <label for="ruaUsuario">Rua</label>
-      <input type="text" class="form-control" name="ruaUsuario" id="ruaUsuario" placeholder="Rua" readonly="true" required>
+      <label for="logradouroUsuario">Logradouro</label>
+      <?php
+        echo '<input type="text" class="form-control" name="logradouroUsuario" id="ruaUsuario" placeholder="Logradouro" readonly="true" value="'.$_SESSION['logradouroUsuario'].'" required>';
+      ?>
       <div class="valid-feedback">
         Bom!
       </div>
@@ -180,7 +200,9 @@
     </div>
     <div class="col-md-2 mb-3">
       <label for="numeroUsuario">Número</label>
-      <input type="text" class="form-control" name="numeroUsuario" id="numeroUsuario" placeholder="Número" pattern="[0-9]" required>
+      <?php
+        echo '<input type="text" class="form-control" name="numeroUsuario" id="numeroUsuario" placeholder="Número" pattern="[0-9]" value="'.$_SESSION['numeroUsuario'].'" required>';
+      ?>
       <div class="valid-feedback">
         Bom!
       </div>
