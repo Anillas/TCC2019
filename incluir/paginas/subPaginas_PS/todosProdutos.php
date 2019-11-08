@@ -1,7 +1,4 @@
 <div class="tab-pane fade show active" id="ToP" role="tabpanel" aria-labelledby="ToP-tab">
-	<div class='card-header titulo_card'>
-				<h3>Casinhas para cachorro</h3>
-			</div>
 			<div class='card-columns' id='coluna01'>
 	<?php
 		mysqli_query($connect, "SET NAMES 'utf8'");
@@ -13,13 +10,12 @@
 			$id = $resultado['id'];
 			$nome 		= $resultado['nome'];
 			$descricao 	= $resultado['descricao'];
-			//$data_noticia 		= date('d/m/Y', strtotime($resultado['data']));
 			$imagem 	= $resultado['imagem'];
 			$preco 	= $resultado['preco'];
 			$quantidade = $resultado['quantidade'];
 			echo "
       			<div class='card border-dark'>
-	            	<img src='../imagens/produtos/casas_pet/cachorro/".$imagem."' class='card-img-top' alt='...'>
+	            	<img src='../imagens/produtos/".$imagem."' class='card-img-top' alt='...'>
 	            	<div class='card-body'>
 	              		<h5 class='card-title'>".$nome."</h5>
 	              		<h5 class='card-title align'> R$ ".$preco."</h5>
@@ -27,7 +23,7 @@
 	              		<form method='POST' action='reserva.php'>
 	              			<input type='text' name='idProduto'  value='".$id."' style='display: none;' required>";
 	              			if ($_SESSION['user'] == 'deslogado'){
-	              				echo '<h5 class="text-danger"> Entre para poder comprar </h5>';
+	              				echo '<h5 class="text-danger"> Entre para poder reservar </h5>';
 	              			}else{
 	              				echo "
 				              		<button type='submit' class='btn btn-warning'>

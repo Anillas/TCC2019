@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 py-5 text-center">
-            <h2 class="mlc"><i class="fa fa-heart red"></i>  Canis  <i class="fa fa-heart red"></i></h2>
+            <h2 class="mlc"><!--i class="fa fa-heart red"></i-->  Canis  <!--i class="fa fa-heart red"></i--></h2>
           <!--div class="mb-5 flex-center">
 
             <! -- Facebook - ->

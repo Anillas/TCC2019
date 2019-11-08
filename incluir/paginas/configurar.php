@@ -31,13 +31,13 @@
   		<div class="col-sm-3 text-center"><!--left col-->
             <div class="justify-content-center" style="display: inline-grid;">
         				  <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
-                  Fulano de Tal
+                  <a href="../../controle/redefine.php" class="btn"><button class="btn btn-danger mt-2">Sair</button></a>
       			</div><br>
-			<ul class="list-group">
+			<!--ul class="list-group">
 				<li class="list-group-item text-muted">Atividade <i class="fa fa-dashboard fa-1x"></i></li>
 				<li class="list-group-item"><span class="pull-left"><strong>Salvos</strong></span> 125</li>
 				<li class="list-group-item"><span class="pull-left"><strong>Favoritos</strong></span> 13</li>
-			</ul> 
+			</ul--> 
           
         </div><!--/col-3-->
     	<div class="col-sm-9">
@@ -212,11 +212,11 @@
     </div>
   </div>
   <div class="modal-footer form-group" style="margin-top: -30px; border: none;">
-   <div class="col-xs-12">
+   <!--div class="col-xs-12">
         <br>
       	<button class="btn btn-lg btn-success" type="submit">Salvar</button>
        	<button class="btn btn-lg btn-danger" type="reset">Cancelar</button>
-    </div>
+    </div-->
 </div>
 <!---            
   <div class="modal-footer" style="border-color: #ffc107;">

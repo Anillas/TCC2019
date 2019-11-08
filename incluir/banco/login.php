@@ -32,7 +32,7 @@
             $_SESSION['logradouroUsuario'] = $resultado['logradouroUsuario'];
             $_SESSION['numeroUsuario'] = $resultado['numeroUsuario'];
             $_SESSION['user'] = 'logado';
-            header("refresh: 3; ../../index.php");
+            header("refresh: 1; ../../index.php");
             exit();
         } else {
             ?>

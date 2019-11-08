@@ -54,5 +54,7 @@
 	define('LIB_PAGINAS',SITE_ROOT_INCLUIR.DS.'paginas');
 	$linkAtivo = basename($_SERVER['SCRIPT_NAME']);
 	require 'conexao.php';
-	$_SESSION['reservas'] = array();
+	if(empty($_SESSION['reservas'])){
+		$_SESSION['reservas'] = array();
+	}
 ?>

@@ -1,4 +1,5 @@
 <?php
+	include_once 'init.php';
 	$_SESSION['nomeUsuario'] = 'nomeUsuario';
 	$_SESSION['sobrenomeUsuario'] = 'sobrenomeUsuario';
 	$_SESSION['telefoneUsuario'] = 'telefoneUsuario';
@@ -11,4 +12,5 @@
 	$_SESSION['logradouroUsuario'] = 'logradouroUsuario';
 	$_SESSION['numeroUsuario'] = 'numeroUsuario';
 	$_SESSION['user'] = 'deslogado';
+	header('Location: ../index.php');
 ?>

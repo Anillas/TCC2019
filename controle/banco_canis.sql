@@ -78,7 +78,7 @@ CREATE TABLE `usuarios` (
   `bairroUsuario` varchar(75) DEFAULT NULL,
   `logradouroUsuario` varchar(75) DEFAULT NULL,
   `numeroUsuario` varchar(5) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

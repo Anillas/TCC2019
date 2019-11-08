@@ -39,18 +39,28 @@
 				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/sobre.php" tabindex="-1" aria-disabled="true"><i class="fas fa-paw" style="font-size: 100%; padding-right: 10px;"></i>Sobre</a>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
+		<!--form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
 			<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
-		</form>
+		</form-->
 	</div>
 </nav>
 
-
+<?php
+	mysqli_query($connect, "SET NAMES 'utf8'");
+    mysqli_query($connect, 'SET character_set_connection=utf8');
+    mysqli_query($connect, 'SET character_set_client=utf8');
+    mysqli_query($connect, 'SET character_set_results=utf8');   
+    $dataE = mysqli_query($connect, "SELECT * FROM `empresa`");
+    $dataP = mysqli_fetch_array($dataE);
+    $historia = $dataP['historia'];
+    $objetivo = $dataP['objetivo'];
+    $metodologia = $dataP['metodologia'];
+?>
 
 
 <div class="mt-5">
-	<div class="parallax">
+	<!--div class="parallax">
 		<div class="row justify-content-center py-5">
 			<div class="col-6 pt-5">
 				<div class="card border-warning p-4" style="opacity: 0.85;">
@@ -61,11 +71,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div-->
 	<div class="parallaxA">
-		<div class="justify-content-center dog" style="height: 600px;">
+		<div class="justify-content-center dog" style="height: 900px;">
 			<center>
-				<div class="col-6 face" style="height: 600px;">
+				<div class="col-6 face" style="height: 900px;">
 					<div class="olhos">
 						<div class="olho">
 							<div class="iris">
@@ -80,7 +90,7 @@
 			</center>
 		</div>
 	</div>
-	<div class="parallax1">
+	<div class="parallax">
 		<div class="row justify-content-center mb-5">
 			<div class="col-6 pt-5">
 				<div class="card border-warning p-4" style="opacity: 0.85;">

@@ -71,13 +71,25 @@
 
 
 <?php
-    array_push($_SESSION['reservas']);
+    if (!empty($_POST)) {
+        $idProduto = $_POST["idProduto"];
+        $nomeProduto = $_POST["nomeProduto"];
+        $imgProduto = $_POST["imgProduto"];
+        $valorProduto = $_POST["valorProduto"];
+        $quantidade = $_POST["quantidade"];
+        $valorFinal = $valorProduto*$quantidade;
+        $$idProduto = array($idProduto, $nomeProduto, $imgProduto, $valorProduto, $quantidade, $valorFinal);
+        $arranjo = $_SESSION['reservas'];
+        array_push($arranjo, $$idProduto);
+        $_SESSION['reservas'] = $arranjo;
+    }
 ?>
 <?php
     if (!empty($_SESSION['reservas'])) {
-        echo '<button class="btn btn-success finalizar_reserva">
-            Compra bem mal sucedida!
-        </button>';
+        echo '<a href="finalizar_reserva.php"> <button class="btn btn-success finalizar_reserva">
+            Finalizar Reservas!
+            </button>
+        </a>';
     }
 ?>
 

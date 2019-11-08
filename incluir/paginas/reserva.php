@@ -31,8 +31,8 @@
 			    	</h3>
 				  </div>
 				  <div class="card-body">
-				  <img src="../imagens/produtos/casas_pet/cachorro/'.$imagemPR.'" class="card-img-top" alt="...">
-				    <h4 class="card-title mt-2"><div style="float: left;">'.$nomePR.'</div><div style="float: right;">'.$precoPR.' R$</div></h4>
+				  <img src="../imagens/produtos/'.$imagemPR.'" class="card-img-top" alt="...">
+				    <h4 class="card-title mt-2"><div style="float: left;">'.$nomePR.'</div><div style="float: right;">R$ '.$precoPR.'</div></h4>
 				    <br>
 				    <p class="card-text">'.$descricaoPR.'</p>
 				    <a href="produtos_servicos.php" class="btn btn-danger">Voltar</a>
@@ -56,7 +56,8 @@
 	       
 <!--CRIAR UMA ARRAY DENTRO DE OUTRA E MANDAR ESSES DADOS E SALVAR TUDO DENTRO DA ARRAY ID QUE VAI FICAR DENTRO DA ARRAY RESERVAS-->
    <form action="produtos_servicos.php" method="POST" class="range-field my-5">
-      <?php echo '<input id="barra" class="custom-range" type="range" name="quantidade" value="1" min="1" max="'.$quantidadePR.'" />'; echo "<input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required><input type='text' name='idProduto'  value='".$id."' style='display: none;' required>";?>
+      <?php echo '<input id="barra" class="custom-range" type="range" name="quantidade" value="1" min="1" max="'.$quantidadePR.'" />';
+	echo "<input type='text' name='idProduto'  value='".$produtos."' style='display: none;'><input type='text' name='nomeProduto'  value='".$nomePR."' style='display: none;'><input type='text' name='imgProduto'  value='".$imagemPR."' style='display: none;'><input type='text' name='valorProduto'  value='".$precoPR."' style='display: none;'>";?>
     <div class="row">
       <div class="col-md-6 text-center pb-5">
         <h3><span class="badge blue lighten-2 mb-4">Quantidade</span></h3>
