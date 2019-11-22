@@ -110,6 +110,16 @@
 			</center>
 		</div>
 	</div>
+	<div class="parallaxA">
+		<div class="justify-content-center dog_nadando" style="height: 600px;">
+			<div class="doggo">
+				<center>
+						<div class="agua" style="height: 600px;">
+						</div>
+				</center>
+			</div>
+		</div>
+	</div>
 </div>
 
 	<script type="text/javascript">

@@ -414,7 +414,21 @@ background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,
   transform: translate(-50%,-50%);
   border-radius: 50%;
 }
-
+.dog_nadando{
+  background-color: #DEB887;
+}
+.doggo{
+  -webkit-mask-box-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg');
+  mask-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg');
+  background:  linear-gradient( -0.2turn, #36486f, #6495ed, #7299df, #286ce6 );
+}
+.agua{
+  background-image: url("incluir/imagens/gif_dog_nadando.gif");
+  width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .finalizar_reserva{
   position: fixed;
   width: 150px;
