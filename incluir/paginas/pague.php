@@ -10,7 +10,7 @@
 <body>
 	<?php
 		$_SESSION['reservas'] = array();
-		header("refresh: 3; ../../index.php");
+		header("refresh: 5; ../../index.php");
 	?>
 	<center>
 	<div class="mx-auto my-5 col-md-4">
@@ -22,7 +22,7 @@
   </div>
   <div class="card-body">
   	<p class="text-warning">
-	Enviaremos os produtos para o endereço fornecido por você no seu cadastro!!
+	Enviaremos os produtos para o endereço fornecido por você no seu perfil!!
 </p>
 </div>
 </div>

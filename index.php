@@ -29,7 +29,7 @@
 			<?php } ?>
 			<?php if ($_SESSION['user'] == 'logado') { ?>
 				<li class="nav-item">
-					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/configurar.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
+					<a class="nav-link mb-0 h5 icone" href="incluir/paginas/minha_conta.php"><i class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Minha Conta</a>
 				</li>
 			<?php } ?>
 			<li class="nav-item">
@@ -108,16 +108,6 @@
 					<div class="cara" style="height: 600px;">
 					</div>
 			</center>
-		</div>
-	</div>
-	<div class="parallaxA">
-		<div class="justify-content-center dog_nadando" style="height: 600px;">
-			<div class="doggo">
-				<center>
-						<div class="agua" style="height: 600px;">
-						</div>
-				</center>
-			</div>
 		</div>
 	</div>
 </div>

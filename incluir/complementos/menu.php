@@ -13,8 +13,8 @@
 					</li>
 				<?php } ?>
 				<?php if ($_SESSION['user'] == 'logado') { ?>
-					<li <?php if($linkAtivo == "configurar.php"){echo 'class="active"';} ?> class="nav-item">
-						<a class="nav-link mb-0 h5 icone" href="configurar.php"><i <?php if($linkAtivo == "configurar.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i <?php if($linkAtivo == "configurar.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 2.5px;"';} ?> class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Perfil</a>
+					<li <?php if($linkAtivo == "minha_conta.php"){echo 'class="active"';} ?> class="nav-item">
+						<a class="nav-link mb-0 h5 icone" href="minha_conta.php"><i <?php if($linkAtivo == "minha_conta.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-user antigo" style="font-size: 100%; margin-right: 10px;"></i><i <?php if($linkAtivo == "minha_conta.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 2.5px;"';} ?> class="fas fa-user-cog novo" style="font-size: 100%; margin-right: 2.5px;"></i>Minha Conta</a>
 					</li>
 				<?php } ?>
 				<li <?php if($linkAtivo == "produtos_servicos.php"){echo 'class="active"';} ?> class="nav-item">

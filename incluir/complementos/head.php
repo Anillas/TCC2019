@@ -3,8 +3,8 @@
 <?php if($linkAtivo == "cadastrar.php"){ ?>
 	<title>Cadastrar</title>
 <?php }?>
-<?php if($linkAtivo == "configurar.php"){ ?>
-	<title>Perfil</title>
+<?php if($linkAtivo == "minha_conta.php"){ ?>
+	<title>Minha Conta</title>
 <?php }?>
 <?php if($linkAtivo == "entrar.php"){ ?>
 	<title>Entrar</title>

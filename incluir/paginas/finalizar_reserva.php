@@ -14,6 +14,7 @@
 			<ul class="list-group list-group-flush">
 				<?php
 					$pague = 0;
+					#var_dump($_SESSION['reservas']);
 					foreach ($_SESSION['reservas'] as $lista) {
 						echo '<li class="list-group-item">
   								<div class="row no-gutters">

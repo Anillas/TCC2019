@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `banco`
 --
-CREATE DATABASE IF NOT EXISTS `banco` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `banco` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `banco`;
 
 -- --------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE `empresa` (
   `historia` varchar(900) DEFAULT NULL,
   `objetivo` varchar(900) DEFAULT NULL,
   `metodologia` varchar(900) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -49,7 +49,7 @@ CREATE TABLE `produtos` (
   `preco` decimal(10,2) DEFAULT NULL,
   `quantidade` int(50) DEFAULT NULL,
   `imagem` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 --
 -- Extraindo dados da tabela `produtos`
