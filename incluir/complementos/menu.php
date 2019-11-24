@@ -28,7 +28,7 @@
 				</li>
 				<?php if($_SESSION['admin'] == "logado"){ ?>
 					<li class="nav-item">
-						<a class="nav-link mb-0 h5 icone" href="../../index.php"><i <?php if($_SESSION['admin'] == "logado"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-redhat" style="font-size: 100%; margin-right: 10px; color: #cc0000"></i>Administrador</a>
+						<a class="nav-link mb-0 h5 icone-admin" href="../../index.php"><i <?php if($_SESSION['dba'] == "ativado"){echo 'style="color: #cc0000; font-size: 100%; margin-right: 10px;"';} ?> class="fab fa-redhat" style="font-size: 100%; margin-right: 10px;"></i>DBA</a>
 					</li>
 				<?php } ?>
 			</ul>

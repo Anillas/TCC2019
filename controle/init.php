@@ -39,6 +39,9 @@
 	if(empty($_SESSION['admin'])){
 		$_SESSION['admin'] = 'deslogado';
 	}
+	if(empty($_SESSION['dba'])){
+		$_SESSION['dba'] = 'desativado';
+	}
 	define('DS', DIRECTORY_SEPARATOR);
 	define('ROOT',$_SERVER['DOCUMENT_ROOT']);
 	define('SITE_ROOT',ROOT.DS.'TCC2019');

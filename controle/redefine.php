@@ -13,5 +13,6 @@
 	$_SESSION['numeroUsuario'] = 'numeroUsuario';
 	$_SESSION['user'] = 'deslogado';
 	$_SESSION['admin'] = 'deslogado';
+	$_SESSION['dba'] = 'desativado';
 	header('Location: ../index.php');
 ?>

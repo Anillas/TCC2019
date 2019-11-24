@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `banco`
 --
-CREATE DATABASE IF NOT EXISTS `banco` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `banco`;
+CREATE DATABASE IF NOT EXISTS `canis_DataBase` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `canis_DataBase`;
 
 -- --------------------------------------------------------
 
@@ -43,12 +43,13 @@ CREATE TABLE `empresa` (
 --
 
 CREATE TABLE `produtos` (
-  `id` varchar(50) NOT NULL,
-  `nome` varchar(50) DEFAULT NULL,
-  `descricao` varchar(900) DEFAULT NULL,
+  `id` varchar(50) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  `tipo` varchar(45) DEFAULT NULL,
+  `descricao` varchar(600) DEFAULT NULL,
   `preco` decimal(10,2) DEFAULT NULL,
-  `quantidade` int(50) DEFAULT NULL,
-  `imagem` varchar(200) DEFAULT NULL
+  `quantidade` int(3) DEFAULT NULL,
+  `imagem` BLOB DEFAULT NULL
 ) CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 --
@@ -62,14 +63,14 @@ INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `quantidade`, `image
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Estrutura da tabela `cliente`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `cliente` (
   `nomeUsuario` varchar(50) DEFAULT NULL,
   `sobrenomeUsuario` varchar(75) DEFAULT NULL,
   `telefoneUsuario` varchar(15) DEFAULT NULL,
-  `cpfUsuario` char(14) DEFAULT NULL,
+  `cpfUsuario` char(14) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `usuario` varchar(50) DEFAULT NULL,
   `senha` varchar(50) DEFAULT NULL,
   `cepUsuario` char(11) DEFAULT NULL,
@@ -77,8 +78,22 @@ CREATE TABLE `usuarios` (
   `cidadeUsuario` varchar(75) DEFAULT NULL,
   `bairroUsuario` varchar(75) DEFAULT NULL,
   `logradouroUsuario` varchar(75) DEFAULT NULL,
-  `numeroUsuario` varchar(5) DEFAULT NULL
+  `numeroUsuario` varchar(5) DEFAULT NULL,
+  `imagem` BLOB DEFAULT NULL
 ) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE `pedidos` (
+  `id` varchar(50) NOT NULL,
+  `nome` varchar(45) DEFAULT NULL,
+  `tipo` varchar(45) DEFAULT NULL
+  `descricao` varchar(600) DEFAULT NULL,
+  `preco` decimal(10,2) DEFAULT NULL,
+  `quantidade` int(3) DEFAULT NULL,
+  `imagem` BLOB DEFAULT NULL
+) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
