@@ -15,7 +15,7 @@
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-		<a class="navbar-brand" href="#" style="cursor: default;"><i class="fas fa-bone" style="color: rgba(255,255,255,.65); font-size: 100%;"></i></a>
+		<!--a class="navbar-brand" href="#" style="cursor: default;"><i class="fas fa-bone" style="color: rgba(255,255,255,.65); font-size: 100%;"></i></a-->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
@@ -33,7 +33,7 @@
 				</li>
 			<?php } ?>
 			<li class="nav-item">
-				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/produtos_servicos.php"><i class="fas fa-shopping-cart antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-cart-plus novo" style="font-size: 100%; padding-right: 10px;"></i>Produtos e Serviços</a>
+				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/produtos_servicos.php"><i class="fas fa-shopping-cart antigo" style="font-size: 100%; padding-right: 10px;"></i><i class="fas fa-cart-plus novo" style="font-size: 100%; padding-right: 10px;"></i>Produtos</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/sobre.php" tabindex="-1" aria-disabled="true"><i class="fas fa-paw" style="font-size: 100%; padding-right: 10px;"></i>Sobre</a>
@@ -59,19 +59,7 @@
 ?>
 
 
-<div class="mt-5">
-	<!--div class="parallax">
-		<div class="row justify-content-center py-5">
-			<div class="col-6 pt-5">
-				<div class="card border-warning p-4" style="opacity: 0.85;">
-					<h3>A Canis</h3>
-					<h5>
-					Nossa empresa surgiu com o objetivo de levar aos donos de animais de estimação a possibilidade de dar algo para seus bichinhos que sempre gostariam que eles tivessem. Não importa de que esfera cultural nossos clientes fazem parte, temos produtos para todos os gostos! E caso alguém ainda sinta falta de uma representação, tem a total liberdade de colocar a mão na massa e personalizar o seu próprio produto, para o seu melhor amigo.
-					</h5>
-				</div>
-			</div>
-		</div>
-	</div-->
+<div>
 	<div class="parallaxA">
 		<div class="justify-content-center dog" style="height: 900px;">
 			<center>

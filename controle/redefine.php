@@ -12,5 +12,6 @@
 	$_SESSION['logradouroUsuario'] = 'logradouroUsuario';
 	$_SESSION['numeroUsuario'] = 'numeroUsuario';
 	$_SESSION['user'] = 'deslogado';
+	$_SESSION['admin'] = 'deslogado';
 	header('Location: ../index.php');
 ?>

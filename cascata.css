@@ -278,7 +278,36 @@ a:link{
   visibility: visible;
   opacity: 1;
 }
-
+.menus_unidos{
+  display: inline-grid;
+}
+.menu_conta{
+  margin-left: 135px;
+  position: relative;
+  float: left;
+}
+.menu_conta ul{
+  border: none;
+}
+.menu_conta ul li{
+  border: none;
+}
+.menu_conta ul li a{
+  font-size: 18px;
+  font-weight: 600;
+  color:rgba(0,0,0,.65)!important;
+  border: 1px solid transparent!important;
+  border-bottom-left-radius:.50rem;
+  border-bottom-right-radius:.50rem;
+}
+.menu_conta ul li a:hover{
+  color:rgba(0,0,0,.85)!important;
+  border: 1px solid transparent!important;
+}
+.menu_conta ul li a.active{
+  background-color: #212121!important;
+  color: #fff!important;
+}
 
 
 /* ----- LABEL -----*/

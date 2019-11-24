@@ -13,7 +13,7 @@
 	<title>Finalizar</title>
 <?php }?>
 <?php if($linkAtivo == "produtos_servicos.php"){ ?>
-	<title>Produtos e Serviços</title>
+	<title>Produtos</title>
 <?php }?>
 <?php if($linkAtivo == "reserva.php"){ ?>
 	<title>Reservar</title>

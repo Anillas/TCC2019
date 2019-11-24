@@ -1,1 +1,1 @@
-pedidos.php
+<h1>Página de pedidos</h1>

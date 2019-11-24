@@ -21,43 +21,15 @@
 	
 
 
-<div class="pt-5 container bootstrap snippet">
-    <div class="row">
-  		<div class="col-sm-3 text-center">
-            <div class="justify-content-center" style="display: inline-grid;">
-        				  <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
-                  <a href="../../controle/redefine.php" class="btn"><button class="btn btn-danger mt-2 col-12">Sair</button></a>
-      			</div><br>
-			<!--ul class="list-group">
-				<li class="list-group-item text-muted">Atividade <i class="fa fa-dashboard fa-1x"></i></li>
-				<li class="list-group-item"><span class="pull-left"><strong>Salvos</strong></span> 125</li>
-				<li class="list-group-item"><span class="pull-left"><strong>Favoritos</strong></span> 13</li>
-			</ul--> 
-          
-        </div>
-
-
-
-    	<div class="col-sm-9">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pedidos-tab" data-toggle="tab" href="#pedidos" role="tab" aria-controls="pedidos" aria-selected="true">Pedidos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="reservar-tab" data-toggle="tab" href="#reservar" role="tab" aria-controls="reservar" aria-selected="false">A reservar</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="perfil-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="perfil" aria-selected="false">Perfil</a>
-  </li>
-</ul>
+<div class="container bootstrap snippet">
+  
+   
+        
         <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="pedidos" role="tabpanel" aria-labelledby="pedidos-tab">...</div>
-  <div class="tab-pane fade" id="reservar" role="tabpanel" aria-labelledby="reservar-tab">...</div>
+  <div class="tab-pane fade show active" id="pedidos" role="tabpanel" aria-labelledby="pedidos-tab"><?php include_once LIB_PAGINAS.DS.'subPaginas_MC/pedidos.php'; ?></div>
+  <div class="tab-pane fade" id="reservar" role="tabpanel" aria-labelledby="reservar-tab"><?php include_once LIB_PAGINAS.DS.'subPaginas_MC/reservar.php'; ?></div>
   <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="perfil-tab"><?php include_once LIB_PAGINAS.DS.'subPaginas_MC/perfil.php'; ?></div>
 </div> 
-      </div><!--/tab-pane-->
-               
-              </div><!--/tab-pane-->
           </div><!--/tab-content-->
 
 	<!--script type="text/javascript">
@@ -99,7 +71,6 @@ olho.mouseup(function() {
   senha.attr("type", "password");
 });
 // para evitar o problema de arrastar a imagem e a senha continuar exposta, 
-//citada pelo nosso amigo nos comentários
 olho.mouseout(function() { 
   senha.attr("type", "password");
 });

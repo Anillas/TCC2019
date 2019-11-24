@@ -1,4 +1,12 @@
-<form class="needs-validation" method="POST" action="configurar.php" novalidate>
+ <div class="row">
+<form class="needs-validation" method="POST" action="configurar.php" novalidate style="display: inline-flex;">
+   <div class="col-sm-3 text-center">
+            <div class="justify-content-center" style="display: inline-grid;">
+                  <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                  <a href="../../controle/redefine.php" class="btn"><button class="btn btn-danger mt-2 col-12">Sair</button></a>
+            </div>
+        </div>
+        <div class="campos">
   				<div class="form-row">
     				<div class="col-md-4 mb-3">
 				      <label for="nomeUsuario">Nome</label>
@@ -175,9 +183,11 @@
        	<button class="btn btn-lg btn-danger" type="reset">Cancelar</button>
     </div-->
 </div>
+</div>
 <!---            
   <div class="modal-footer" style="border-color: #ffc107;">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
         <button type="submit" class="btn btn-warning">Enviar</button>
       </div-->
 </form>
+</div>
