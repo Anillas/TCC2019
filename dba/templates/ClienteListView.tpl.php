@@ -21,11 +21,11 @@
 <div class="container">
 
 <h1>
-	<i class="icon-th-list"></i> Clientes
+	<i class="fas fa-database" style="color: #000;"></i> Clientes
 	<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
 	<span class='input-append pull-right searchContainer'>
-		<input id='filter' type="text" placeholder="Search..." />
-		<button class='btn add-on'><i class="icon-search"></i></button>
+		<input id='filter' type="text" placeholder="Pesquisar..." />
+		<button class='btn-botao add-on'><i class="icon-search"></i></button>
 	</span>
 </h1>
 
@@ -34,19 +34,19 @@
 		<table class="collection table table-bordered table-hover">
 		<thead>
 			<tr>
-				<th id="header_Nomeusuario">Nomeusuario<% if (page.orderBy == 'Nomeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Sobrenomeusuario">Sobrenomeusuario<% if (page.orderBy == 'Sobrenomeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Telefoneusuario">Telefoneusuario<% if (page.orderBy == 'Telefoneusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Cpfusuario">Cpfusuario<% if (page.orderBy == 'Cpfusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Usuario">Usuario<% if (page.orderBy == 'Usuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Nomeusuario">Nome<% if (page.orderBy == 'Nomeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Sobrenomeusuario">Sobrenome<% if (page.orderBy == 'Sobrenomeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Telefoneusuario">Telefone<% if (page.orderBy == 'Telefoneusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Cpfusuario">CPF<% if (page.orderBy == 'Cpfusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Usuario">Usuário<% if (page.orderBy == 'Usuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 <!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
 				<th id="header_Senha">Senha<% if (page.orderBy == 'Senha') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Cepusuario">Cepusuario<% if (page.orderBy == 'Cepusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Estadousuario">Estadousuario<% if (page.orderBy == 'Estadousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Cidadeusuario">Cidadeusuario<% if (page.orderBy == 'Cidadeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Bairrousuario">Bairrousuario<% if (page.orderBy == 'Bairrousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Logradourousuario">Logradourousuario<% if (page.orderBy == 'Logradourousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Numerousuario">Numerousuario<% if (page.orderBy == 'Numerousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Cepusuario">CEP<% if (page.orderBy == 'Cepusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Estadousuario">Estado<% if (page.orderBy == 'Estadousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Cidadeusuario">Cidade<% if (page.orderBy == 'Cidadeusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Bairrousuario">Bairro<% if (page.orderBy == 'Bairrousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Logradourousuario">Logradouro<% if (page.orderBy == 'Logradourousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Numerousuario">Numero<% if (page.orderBy == 'Numerousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Imagem">Imagem<% if (page.orderBy == 'Imagem') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 -->
 			</tr>
@@ -82,37 +82,37 @@
 		<form class="form-horizontal" onsubmit="return false;">
 			<fieldset>
 				<div id="nomeusuarioInputContainer" class="control-group">
-					<label class="control-label" for="nomeusuario">Nomeusuario</label>
+					<label class="control-label" for="nomeusuario">Nome</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="nomeusuario" placeholder="Nomeusuario" value="<%= _.escape(item.get('nomeusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="nomeusuario" placeholder="Nome" value="<%= _.escape(item.get('nomeusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="sobrenomeusuarioInputContainer" class="control-group">
-					<label class="control-label" for="sobrenomeusuario">Sobrenomeusuario</label>
+					<label class="control-label" for="sobrenomeusuario">Sobrenome</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="sobrenomeusuario" placeholder="Sobrenomeusuario" value="<%= _.escape(item.get('sobrenomeusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="sobrenomeusuario" placeholder="Sobrenome" value="<%= _.escape(item.get('sobrenomeusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="telefoneusuarioInputContainer" class="control-group">
-					<label class="control-label" for="telefoneusuario">Telefoneusuario</label>
+					<label class="control-label" for="telefoneusuario">Telefone</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="telefoneusuario" placeholder="Telefoneusuario" value="<%= _.escape(item.get('telefoneusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="telefoneusuario" placeholder="(00) 00000-0000" value="<%= _.escape(item.get('telefoneusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="cpfusuarioInputContainer" class="control-group">
-					<label class="control-label" for="cpfusuario">Cpfusuario</label>
+					<label class="control-label" for="cpfusuario">CPF</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="cpfusuario" placeholder="Cpfusuario" value="<%= _.escape(item.get('cpfusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="cpfusuario" placeholder="CPF" value="<%= _.escape(item.get('cpfusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="usuarioInputContainer" class="control-group">
-					<label class="control-label" for="usuario">Usuario</label>
+					<label class="control-label" for="usuario">Usuário</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="usuario" placeholder="Usuario" value="<%= _.escape(item.get('usuario') || '') %>">
+						<input type="text" class="input-xlarge" id="usuario" placeholder="Usuário" value="<%= _.escape(item.get('usuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -124,51 +124,51 @@
 					</div>
 				</div>
 				<div id="cepusuarioInputContainer" class="control-group">
-					<label class="control-label" for="cepusuario">Cepusuario</label>
+					<label class="control-label" for="cepusuario">CEP</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="cepusuario" placeholder="Cepusuario" value="<%= _.escape(item.get('cepusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="cepusuario" placeholder="CEP" value="<%= _.escape(item.get('cepusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="estadousuarioInputContainer" class="control-group">
-					<label class="control-label" for="estadousuario">Estadousuario</label>
+					<label class="control-label" for="estadousuario">Estado</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="estadousuario" placeholder="Estadousuario" value="<%= _.escape(item.get('estadousuario') || '') %>">
+						<input type="text" class="input-xlarge" id="estadousuario" placeholder="Estado" value="<%= _.escape(item.get('estadousuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="cidadeusuarioInputContainer" class="control-group">
-					<label class="control-label" for="cidadeusuario">Cidadeusuario</label>
+					<label class="control-label" for="cidadeusuario">Cidade</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="cidadeusuario" placeholder="Cidadeusuario" value="<%= _.escape(item.get('cidadeusuario') || '') %>">
+						<input type="text" class="input-xlarge" id="cidadeusuario" placeholder="Cidade" value="<%= _.escape(item.get('cidadeusuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="bairrousuarioInputContainer" class="control-group">
-					<label class="control-label" for="bairrousuario">Bairrousuario</label>
+					<label class="control-label" for="bairrousuario">Bairro</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="bairrousuario" placeholder="Bairrousuario" value="<%= _.escape(item.get('bairrousuario') || '') %>">
+						<input type="text" class="input-xlarge" id="bairrousuario" placeholder="Bairro" value="<%= _.escape(item.get('bairrousuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="logradourousuarioInputContainer" class="control-group">
-					<label class="control-label" for="logradourousuario">Logradourousuario</label>
+					<label class="control-label" for="logradourousuario">Logradouro</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="logradourousuario" placeholder="Logradourousuario" value="<%= _.escape(item.get('logradourousuario') || '') %>">
+						<input type="text" class="input-xlarge" id="logradourousuario" placeholder="Logradouro" value="<%= _.escape(item.get('logradourousuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="numerousuarioInputContainer" class="control-group">
-					<label class="control-label" for="numerousuario">Numerousuario</label>
+					<label class="control-label" for="numerousuario">Número</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="numerousuario" placeholder="Numerousuario" value="<%= _.escape(item.get('numerousuario') || '') %>">
+						<input type="text" class="input-xlarge" id="numerousuario" placeholder="Número" value="<%= _.escape(item.get('numerousuario') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="imagemInputContainer" class="control-group">
 					<label class="control-label" for="imagem">Imagem</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
+						<input type="file" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -181,10 +181,10 @@
 				<div class="control-group">
 					<label class="control-label"></label>
 					<div class="controls">
-						<button id="deleteClienteButton" class="btn btn-mini btn-danger"><i class="icon-trash icon-white"></i> Delete Cliente</button>
+						<button id="deleteClienteButton" class="btn-botao btn-botao-mini btn-botao-danger"><i class="icon-trash icon-white"></i> Deletar Cliente</button>
 						<span id="confirmDeleteClienteContainer" class="hide">
-							<button id="cancelDeleteClienteButton" class="btn btn-mini">Cancel</button>
-							<button id="confirmDeleteClienteButton" class="btn btn-mini btn-danger">Confirm</button>
+							<button id="cancelDeleteClienteButton" class="btn-botao btn-botao-mini">Cancelar</button>
+							<button id="confirmDeleteClienteButton" class="btn-botao btn-botao-mini btn-botao-danger">Confirmar</button>
 						</span>
 					</div>
 				</div>
@@ -197,7 +197,7 @@
 		<div class="modal-header">
 			<a class="close" data-dismiss="modal">&times;</a>
 			<h3>
-				<i class="icon-edit"></i> Edit Cliente
+				<i class="icon-edit"></i> Editar Cliente
 				<span id="modelLoader" class="loader progress progress-striped active"><span class="bar"></span></span>
 			</h3>
 		</div>
@@ -206,8 +206,8 @@
 			<div id="clienteModelContainer"></div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" >Cancel</button>
-			<button id="saveClienteButton" class="btn btn-primary">Save Changes</button>
+			<button class="btn-botao btn-botao-danger" data-dismiss="modal" >Cancelar</button>
+			<button id="saveClienteButton" class="btn-botao btn-botao-link">Salvar Alterações</button>
 		</div>
 	</div>
 
@@ -217,7 +217,7 @@
 	</div>
 
 	<p id="newButtonContainer" class="buttonContainer">
-		<button id="newClienteButton" class="btn btn-primary">Add Cliente</button>
+		<button id="newClienteButton" class="btn-botao btn-botao-primary">Adicionar</button>
 	</p>
 
 </div> <!-- /container -->

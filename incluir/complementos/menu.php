@@ -8,7 +8,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li <?php if($linkAtivo == "index.php"){echo 'class="active"';} ?> class="nav-item">
-					<a class="nav-link mb-0 h5 icone" href="../../index.php"><i <?php if($linkAtivo == "index.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-home" style="font-size: 100%; margin-right: 10px;"></i>Home</a>
+					<a class="nav-link mb-0 h5 icone" href="../../"><i <?php if($linkAtivo == "index.php"){echo 'style="color: #fff; font-size: 100%; margin-right: 10px;"';} ?> class="fas fa-home" style="font-size: 100%; margin-right: 10px;"></i>Home</a>
 				</li>
 				<?php if ($_SESSION['user'] == 'deslogado') { ?>
 					<li <?php if($linkAtivo == "entrar.php"){echo 'class="active"';} ?> class="nav-item">

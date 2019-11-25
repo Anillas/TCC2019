@@ -21,11 +21,11 @@
 <div class="container">
 
 <h1>
-	<i class="icon-th-list"></i> Produtos
+	<i class="fas fa-database" style="color: #000;"></i> Produtos
 	<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
 	<span class='input-append pull-right searchContainer'>
-		<input id='filter' type="text" placeholder="Search..." />
-		<button class='btn add-on'><i class="icon-search"></i></button>
+		<input id='filter' type="text" placeholder="Pesquisar..." />
+		<button class='btn-botao add-on'><i class="icon-search"></i></button>
 	</span>
 </h1>
 
@@ -37,9 +37,9 @@
 				<th id="header_Id">Id<% if (page.orderBy == 'Id') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Nome">Nome<% if (page.orderBy == 'Nome') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Tipo">Tipo<% if (page.orderBy == 'Tipo') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Descricao">Descricao<% if (page.orderBy == 'Descricao') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_Preco">Preco<% if (page.orderBy == 'Preco') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Descricao">Descrição<% if (page.orderBy == 'Descricao') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 <!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
+				<th id="header_Preco">Preço<% if (page.orderBy == 'Preco') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Quantidade">Quantidade<% if (page.orderBy == 'Quantidade') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Imagem">Imagem<% if (page.orderBy == 'Imagem') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 -->
@@ -91,16 +91,16 @@
 					</div>
 				</div>
 				<div id="descricaoInputContainer" class="control-group">
-					<label class="control-label" for="descricao">Descricao</label>
+					<label class="control-label" for="descricao">Descrição</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="descricao" placeholder="Descricao" value="<%= _.escape(item.get('descricao') || '') %>">
+						<input type="text" class="input-xlarge" id="descricao" placeholder="Descrição" value="<%= _.escape(item.get('descricao') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="precoInputContainer" class="control-group">
-					<label class="control-label" for="preco">Preco</label>
+					<label class="control-label" for="preco">Preço</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="preco" placeholder="Preco" value="<%= _.escape(item.get('preco') || '') %>">
+						<input type="text" class="input-xlarge" id="preco" placeholder="Preço" value="<%= _.escape(item.get('preco') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -114,7 +114,7 @@
 				<div id="imagemInputContainer" class="control-group">
 					<label class="control-label" for="imagem">Imagem</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
+						<input type="file" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -127,10 +127,11 @@
 				<div class="control-group">
 					<label class="control-label"></label>
 					<div class="controls">
-						<button id="deleteProdutoButton" class="btn btn-mini btn-danger"><i class="icon-trash icon-white"></i> Delete Produto</button>
+						<button id="deleteProdutoButton" class="btn-botao btn-mini btn-botao-danger"><i class="icon-trash icon-white" data-toggle="modal" data-target="#exampleModal"></i> Deletar Produto</button>
 						<span id="confirmDeleteProdutoContainer" class="hide">
-							<button id="cancelDeleteProdutoButton" class="btn btn-mini">Cancel</button>
-							<button id="confirmDeleteProdutoButton" class="btn btn-mini btn-danger">Confirm</button>
+							<br><br>
+							<button id="cancelDeleteProdutoButton" class="btn-botao btn-botao-primary btn-mini">Cancelar</button>
+							<button id="confirmDeleteProdutoButton" class="btn-botao btn-mini btn-botao-danger">Confirmar</button>
 						</span>
 					</div>
 				</div>
@@ -143,7 +144,7 @@
 		<div class="modal-header">
 			<a class="close" data-dismiss="modal">&times;</a>
 			<h3>
-				<i class="icon-edit"></i> Edit Produto
+				<i class="icon-edit"></i> Editar Produto
 				<span id="modelLoader" class="loader progress progress-striped active"><span class="bar"></span></span>
 			</h3>
 		</div>
@@ -152,8 +153,8 @@
 			<div id="produtoModelContainer"></div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" >Cancel</button>
-			<button id="saveProdutoButton" class="btn btn-primary">Save Changes</button>
+			<button class="btn-botao btn-botao-danger" data-dismiss="modal" >Cancelar</button>
+			<button id="saveProdutoButton" class="btn-botao btn-botao-success">Salvar Alterações</button>
 		</div>
 	</div>
 
@@ -163,7 +164,7 @@
 	</div>
 
 	<p id="newButtonContainer" class="buttonContainer">
-		<button id="newProdutoButton" class="btn btn-primary">Add Produto</button>
+		<button id="newProdutoButton" class="btn-botao btn-botao-primary">Adicionar Produto</button>
 	</p>
 
 </div> <!-- /container -->
