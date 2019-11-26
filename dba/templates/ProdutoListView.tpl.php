@@ -20,12 +20,16 @@
 
 <div class="container">
 
-<h1>
-	<i class="fas fa-database" style="color: #000;"></i> Produtos
-	<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
+<h1 class="dados">
+	<div class="loader-banco">
+		<div class="loader-tabela">
+			<i class="fas fa-database" style="color: #000;"></i> Produtos
+		</div>
+		<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
+	</div>
 	<span class='input-append pull-right searchContainer'>
 		<input id='filter' type="text" placeholder="Pesquisar..." />
-		<button class='btn-botao add-on'><i class="icon-search"></i></button>
+		<button class='btn-pesquisa add-on'><i class="icon-search"></i></button>
 	</span>
 </h1>
 
@@ -38,7 +42,7 @@
 				<th id="header_Nome">Nome<% if (page.orderBy == 'Nome') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Tipo">Tipo<% if (page.orderBy == 'Tipo') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Descricao">Descrição<% if (page.orderBy == 'Descricao') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-<!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
+<!-- Ocultando as demais colunas
 				<th id="header_Preco">Preço<% if (page.orderBy == 'Preco') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Quantidade">Quantidade<% if (page.orderBy == 'Quantidade') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Imagem">Imagem<% if (page.orderBy == 'Imagem') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
@@ -52,8 +56,8 @@
 				<td><%= _.escape(item.get('nome') || '') %></td>
 				<td><%= _.escape(item.get('tipo') || '') %></td>
 				<td><%= _.escape(item.get('descricao') || '') %></td>
+<!-- Ocultando as demais colunas
 				<td><%= _.escape(item.get('preco') || '') %></td>
-<!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
 				<td><%= _.escape(item.get('quantidade') || '') %></td>
 				<td><%= _.escape(item.get('imagem') || '') %></td>
 -->

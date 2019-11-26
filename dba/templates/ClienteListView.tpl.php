@@ -20,12 +20,16 @@
 
 <div class="container">
 
-<h1>
-	<i class="fas fa-database" style="color: #000;"></i> Clientes
-	<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
+<h1 class="dados">
+	<div class="loader-banco">
+		<div class="loader-tabela">
+			<i class="fas fa-database" style="color: #000;"></i> Clientes
+		</div>
+		<span id=loader class="loader progress progress-striped active"><span class="bar"></span></span>
+	</div>
 	<span class='input-append pull-right searchContainer'>
 		<input id='filter' type="text" placeholder="Pesquisar..." />
-		<button class='btn-botao add-on'><i class="icon-search"></i></button>
+		<button class='btn-pesquisa add-on'><i class="icon-search"></i></button>
 	</span>
 </h1>
 
@@ -39,7 +43,7 @@
 				<th id="header_Telefoneusuario">Telefone<% if (page.orderBy == 'Telefoneusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Cpfusuario">CPF<% if (page.orderBy == 'Cpfusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Usuario">Usuário<% if (page.orderBy == 'Usuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-<!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
+<!-- Ocultando as demais colunas
 				<th id="header_Senha">Senha<% if (page.orderBy == 'Senha') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Cepusuario">CEP<% if (page.orderBy == 'Cepusuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 				<th id="header_Estadousuario">Estado<% if (page.orderBy == 'Estadousuario') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
@@ -59,7 +63,7 @@
 				<td><%= _.escape(item.get('telefoneusuario') || '') %></td>
 				<td><%= _.escape(item.get('cpfusuario') || '') %></td>
 				<td><%= _.escape(item.get('usuario') || '') %></td>
-<!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
+<!-- Ocultando as demais colunas
 				<td><%= _.escape(item.get('senha') || '') %></td>
 				<td><%= _.escape(item.get('cepusuario') || '') %></td>
 				<td><%= _.escape(item.get('estadousuario') || '') %></td>
@@ -216,9 +220,9 @@
 	<div id="clienteCollectionContainer" class="collectionContainer">
 	</div>
 
-	<p id="newButtonContainer" class="buttonContainer">
+	<!--p id="newButtonContainer" class="buttonContainer">
 		<button id="newClienteButton" class="btn-botao btn-botao-primary">Adicionar</button>
-	</p>
+	</p-->
 
 </div> <!-- /container -->
 
