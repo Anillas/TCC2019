@@ -1,23 +1,23 @@
 <?php include "../complementos/meta.php"; ?>
 <?php include "../complementos/link.php"; ?>
 <?php if($linkAtivo == "cadastrar.php"){ ?>
-	<title>Cadastrar</title>
+	<title>Canis | Cadastrar</title>
 <?php }?>
 <?php if($linkAtivo == "minha_conta.php"){ ?>
-	<title>Minha Conta</title>
+	<title>Canis | Minha Conta</title>
 <?php }?>
 <?php if($linkAtivo == "entrar.php"){ ?>
-	<title>Entrar</title>
+	<title>Canis | Entrar</title>
 <?php }?>
 <?php if($linkAtivo == "finalizar_reserva.php"){ ?>
-	<title>Finalizar</title>
+	<title>Canis | Finalizar</title>
 <?php }?>
 <?php if($linkAtivo == "produtos_servicos.php"){ ?>
-	<title>Produtos</title>
+	<title>Canis | Produtos</title>
 <?php }?>
 <?php if($linkAtivo == "reserva.php"){ ?>
-	<title>Reservar</title>
+	<title>Canis | Reservar</title>
 <?php }?>
 <?php if($linkAtivo == "sobre.php"){ ?>
-	<title>Sobre</title>
+	<title>Canis | Sobre</title>
 <?php }?>

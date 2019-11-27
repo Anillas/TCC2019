@@ -1,6 +1,6 @@
 <?php
    	$db_host = "localhost";
-	$db_nome = "banco"; //id11299677_banco_tcc
+	$db_nome = "canis_database"; //id11299677_banco_tcc
 	$db_usuario = "root"; //id11299677_sani
 	$db_senha = ""; //senha12345
     $db_driver = "mysql";

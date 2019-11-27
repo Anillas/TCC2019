@@ -1,11 +1,12 @@
  <div class="row">
-<form class="needs-validation" method="POST" action="configurar.php" novalidate style="display: inline-flex;">
-   <div class="col-sm-3 text-center">
+
+   <div class="col-3 text-center">
             <div class="justify-content-center" style="display: inline-grid;">
                   <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
                   <a href="../../controle/redefine.php" class="btn"><button class="btn btn-danger mt-2 col-12">Sair</button></a>
             </div>
         </div>
+        <form class="needs-validation" method="POST" action="configurar.php" novalidate style="display: inline-flex;">
         <div class="campos">
   				<div class="form-row">
     				<div class="col-md-4 mb-3">

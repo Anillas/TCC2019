@@ -45,8 +45,8 @@ class ProdutoReporter extends Reporter
 			,`produtos`.`id` as Id
 			,`produtos`.`nome` as Nome
 			,`produtos`.`tipo` as Tipo
-			,`produtos`.`descricao` as Descricao
-			,`produtos`.`preco` as Preco
+			,`produtos`.`descricao` as Descrição
+			,`produtos`.`preco` as Preço
 			,`produtos`.`quantidade` as Quantidade
 			,`produtos`.`imagem` as Imagem
 		from `produtos`";

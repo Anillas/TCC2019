@@ -48,18 +48,18 @@ class ClienteReporter extends Reporter
 	{
 		$sql = "select
 			'custom value here...' as CustomFieldExample
-			,`cliente`.`nomeUsuario` as Nomeusuario
-			,`cliente`.`sobrenomeUsuario` as Sobrenomeusuario
-			,`cliente`.`telefoneUsuario` as Telefoneusuario
-			,`cliente`.`cpfUsuario` as Cpfusuario
+			,`cliente`.`nomeUsuario` as Nome
+			,`cliente`.`sobrenomeUsuario` as Sobrenome
+			,`cliente`.`telefoneUsuario` as Telefone
+			,`cliente`.`cpfUsuario` as CPF
 			,`cliente`.`usuario` as Usuario
 			,`cliente`.`senha` as Senha
-			,`cliente`.`cepUsuario` as Cepusuario
-			,`cliente`.`estadoUsuario` as Estadousuario
-			,`cliente`.`cidadeUsuario` as Cidadeusuario
-			,`cliente`.`bairroUsuario` as Bairrousuario
-			,`cliente`.`logradouroUsuario` as Logradourousuario
-			,`cliente`.`numeroUsuario` as Numerousuario
+			,`cliente`.`cepUsuario` as CEP
+			,`cliente`.`estadoUsuario` as Estado
+			,`cliente`.`cidadeUsuario` as Cidade
+			,`cliente`.`bairroUsuario` as Bairro
+			,`cliente`.`logradouroUsuario` as Logradouro
+			,`cliente`.`numeroUsuario` as Numero
 			,`cliente`.`imagem` as Imagem
 		from `cliente`";
 

@@ -28,7 +28,7 @@
 				</li>
 				<?php if($_SESSION['admin'] == "logado"){ ?>
 					<li class="nav-item">
-						<a class="nav-link mb-0 h5 icone-admin" href="../../index.php"><i <?php if($_SESSION['dba'] == "ativado"){echo 'style="color: #cc0000; font-size: 100%; margin-right: 10px;"';} ?> class="fab fa-redhat" style="font-size: 100%; margin-right: 10px;"></i>DBA</a>
+						<a class="nav-link mb-0 h5 icone-admin" href="../../dba/"><i <?php if($_SESSION['dba'] == "ativado"){echo 'style="color: #cc0000; font-size: 100%; margin-right: 10px;"';} ?> class="fab fa-redhat" style="font-size: 100%; margin-right: 10px;"></i>DBA</a>
 					</li>
 				<?php } ?>
 			</ul>
@@ -59,7 +59,7 @@
 <?php } ?>
 <?php if($linkAtivo == "entrar.php"){ ?>
 	<nav class="navbar navbar-expand navbar-dark bg-dark">
-	<a class="navbar-brand" href="#" style="cursor: default;"><i class="fas fa-bone" style="color: rgba(255,255,255,.65); font-size: 100%;"></i></a>
+	<!--a class="navbar-brand" href="#" style="cursor: default;"><i class="fas fa-bone" style="color: rgba(255,255,255,.65); font-size: 100%;"></i></a-->
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item">

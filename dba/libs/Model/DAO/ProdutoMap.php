@@ -57,7 +57,7 @@ class ProdutoMap implements IDaoMap, IDaoMap2
 			self::$FM["Descricao"] = new FieldMap("Descricao","produtos","descricao",false,FM_TYPE_VARCHAR,600,null,false);
 			self::$FM["Preco"] = new FieldMap("Preco","produtos","preco",false,FM_TYPE_DECIMAL,10.2,null,false);
 			self::$FM["Quantidade"] = new FieldMap("Quantidade","produtos","quantidade",false,FM_TYPE_INT,3,null,false);
-			self::$FM["Imagem"] = new FieldMap("Imagem","produtos","imagem",false,FM_TYPE_BLOB,null,null,false);
+			self::$FM["Imagem"] = new FieldMap("Imagem","produtos","imagem",false,FM_TYPE_VARCHAR,50,null,false);
 		}
 		return self::$FM;
 	}

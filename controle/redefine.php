@@ -14,5 +14,7 @@
 	$_SESSION['user'] = 'deslogado';
 	$_SESSION['admin'] = 'deslogado';
 	$_SESSION['dba'] = 'desativado';
+	$redefine_sql = "TRUNCATE TABLE 'reserva'";
+	mysqli_query($connect,$redefine_sql);
 	header('Location: ../index.php');
 ?>

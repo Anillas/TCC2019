@@ -39,7 +39,7 @@ class ProdutoDAO extends Phreezable
 	/** @var int */
 	public $Quantidade;
 
-	/** @var blob */
+	/** @var string */
 	public $Imagem;
 
 

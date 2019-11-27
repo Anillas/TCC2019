@@ -118,7 +118,7 @@
 				<div id="imagemInputContainer" class="control-group">
 					<label class="control-label" for="imagem">Imagem</label>
 					<div class="controls inline-inputs">
-						<input type="file" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
+						<input type="text" class="input-xlarge" id="imagem" placeholder="Imagem" value="<%= _.escape(item.get('imagem') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>

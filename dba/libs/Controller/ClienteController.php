@@ -169,7 +169,7 @@ class ClienteController extends AppBaseController
 
 			if (count($errors) > 0)
 			{
-				$this->RenderErrorJSON('Please check the form for errors',$errors);
+				$this->RenderErrorJSON('Por favor cheque os erros no formulário',$errors);
 			}
 			else
 			{
@@ -226,7 +226,7 @@ class ClienteController extends AppBaseController
 
 			if (count($errors) > 0)
 			{
-				$this->RenderErrorJSON('Please check the form for errors',$errors);
+				$this->RenderErrorJSON('Por favor cheque os erros no formulário',$errors);
 			}
 			else
 			{

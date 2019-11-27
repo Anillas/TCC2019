@@ -38,6 +38,11 @@
 			<li class="nav-item">
 				<a class="nav-link mb-0 h5 icone" href="incluir/paginas/sobre.php" tabindex="-1" aria-disabled="true"><i class="fas fa-paw" style="font-size: 100%; padding-right: 10px;"></i>Sobre</a>
 			</li>
+			<?php if($_SESSION['admin'] == "logado"){ ?>
+					<li class="nav-item">
+						<a class="nav-link mb-0 h5 icone-admin" href="dba/"><i <?php if($_SESSION['dba'] == "ativado"){echo 'style="color: #cc0000; font-size: 100%; margin-right: 10px;"';} ?> class="fab fa-redhat" style="font-size: 100%; margin-right: 10px;"></i>DBA</a>
+					</li>
+				<?php } ?>
 		</ul>
 		<!--form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">

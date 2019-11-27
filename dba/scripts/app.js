@@ -164,7 +164,7 @@ var app = {
 	 */
 	getErrorMessage: function(resp) {
 
-		var msg = 'An unknown error occured';
+		var msg = 'Erro desconhecido!';
 		try	{
 			var json = $.parseJSON(resp.responseText);
 			msg = json.message;

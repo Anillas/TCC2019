@@ -6,6 +6,7 @@
 		mysqli_query($connect, 'SET character_set_client=utf8');
 		mysqli_query($connect, 'SET character_set_results=utf8');	
 		$sql = mysqli_query($connect, "SELECT * FROM produtos");
+		
 		while($resultado = mysqli_fetch_array($sql)){
 			$id = $resultado['id'];
 			$nome 		= $resultado['nome'];
@@ -13,9 +14,9 @@
 			$imagem 	= $resultado['imagem'];
 			$preco 	= $resultado['preco'];
 			$quantidade = $resultado['quantidade'];
-			echo "
-      			<div class='card border-dark'>
-	            	<img src='../imagens/produtos/".$imagem."' class='card-img-top' alt='...'>
+	          echo "<div class='card border-dark'>
+	          <center>
+	          <img src='../imagens/produtos/".$imagem.".jpg' class='card-img-top' alt='...' style='max-width: 60%; height: auto;'></center>
 	            	<div class='card-body'>
 	              		<h5 class='card-title'>".$nome."</h5>
 	              		<h5 class='card-title align'> R$ ".$preco."</h5>
@@ -26,7 +27,7 @@
 	              				echo '<h5 class="text-danger"> Entre para poder reservar </h5>';
 	              			}else{
 	              				echo "
-				              		<button type='submit' class='btn btn-warning'>
+				              		<button type='submit' class='btn btn-warning disabled' disabled>
 									  Reservar
 									</button>";
 							}echo "
